@@ -9,7 +9,8 @@ module.exports = {
     theme: {
       fontFamily: {
         sans: ['europa', 'sans-serif'],
-        serif: ['ibarra-real-nova', 'serif'],
+        serif: ['ivyjournal', 'serif'],
+        posture: ['postureregular', 'serif'],
       },
       extend: {
         spacing: {
@@ -31,13 +32,12 @@ module.exports = {
           '50': '50vh',
         },
         colors: {
-          'light': '#F2F2F0',
-          'dark': '#66766C',
-          'x-dark': '#141715',
-          'midnight': '#3A3D3B',
-          'main': '#CFD1C6',
-          'feature': '#B37B64',
-          'transparent': 'transparent',
+          'light': '#F0EEE1',
+          'lighter': '#FCFBF9',
+          'dark': '#686049',
+          'x-dark': '#423B24',
+          'main': '#ABA785',
+          'feature': '#BF947A',
         },
       },
     },

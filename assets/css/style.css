@@ -1,12 +1,5 @@
-/* Fonts
-font-family: europa, sans-serif; 300, 400, 700
-font-family: ibarra-real-nova, serif; 400, 700
- */
-
-
 /* ----------- Import Tailwind -----*/
-/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
- */
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -340,13 +333,13 @@ body {
   font-family: europa, sans-serif;
   font-weight: 300;
   --tw-text-opacity: 1;
-  color: rgb(20 23 21 / var(--tw-text-opacity));
+  color: rgb(66 59 36 / var(--tw-text-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 nav a:hover {
   --tw-text-opacity: 1;
-  color: rgb(179 123 100 / var(--tw-text-opacity));
+  color: rgb(191 148 122 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -354,9 +347,9 @@ nav a:hover {
   transition-duration: 500ms;
 }
 footer nav a {
-  font-family: ibarra-real-nova, serif;
+  font-family: ivyjournal, serif;
   --tw-text-opacity: 1;
-  color: rgb(102 118 108 / var(--tw-text-opacity));
+  color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 p {
   margin-bottom: 1rem;
@@ -368,16 +361,16 @@ ul {
   list-style-type: disc;
 }
 ul *::marker {
-  color: rgb(179 123 100 );
+  color: rgb(191 148 122 );
 }
 ul::marker {
-  color: rgb(179 123 100 );
+  color: rgb(191 148 122 );
 }
 li *::marker {
-  color: rgb(179 123 100 );
+  color: rgb(191 148 122 );
 }
 li::marker {
-  color: rgb(179 123 100 );
+  color: rgb(191 148 122 );
 }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -486,106 +479,13 @@ li::marker {
   --tw-contain-style:  ;
 }
 /* Padding */
-.section-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-@media (min-width: 1024px) {
-  .section-padding {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
 /* Buttons */
-.button {
-  margin-top: 1rem;
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(179 123 100 / var(--tw-bg-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: ibarra-real-nova, serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-transform: capitalize;
-  letter-spacing: 0.05em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.button:hover {
-  background-color: rgb(179 123 100 / 0.75);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-}
-.button-cookies {
-  margin-top: 1rem;
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(179 123 100 / var(--tw-bg-opacity));
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-family: ibarra-real-nova, serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  letter-spacing: 0.05em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.button-cookies:hover {
-  background-color: rgb(179 123 100 / 0.75);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-}
-.link {
-  margin-bottom: 0.5rem;
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(179 123 100 / var(--tw-border-opacity));
-  text-transform: lowercase;
-  --tw-text-opacity: 1;
-  color: rgb(179 123 100 / var(--tw-text-opacity));
-}
-.link:hover {
-  border-color: rgb(179 123 100 / 0.65);
-  color: rgb(179 123 100 / 0.65);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
-}
 /* Images */
 .bg-image-style {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* SVG */
-/* Background SVGs */
-/* Inline SVGs (Illustrations/Graphics) */
-/* Overlays */
-.bg-overlay.light::before {
-        background-color: rgba(207, 209, 198, 0.3);
-
-    }
-.bg-overlay.dark::before {
-        background-color: rgba(207, 209, 198, 0.7);
-
-    }
 /* Mobile Menu */
 .mobile-button {
         position: fixed;
@@ -607,18 +507,18 @@ li::marker {
         background-color: var(--dark);
     }
 .mobile-button.active .mobile-top {
-        border-color: var(--featured);
+        border-color: var(--feature);
         position: absolute;
         top: 8px;
         transform: rotateZ(45deg);
     }
 .mobile-button.active .mobile-middle {
         /*   transform: rotateZ(270deg); */
-        border-color: var(--featured);
-        background-color: var(--featured);
+        border-color: var(--feature);
+        background-color: var(--feature);
     }
 .mobile-button.active .mobile-bottom {
-        border-color: var(--featured);
+        border-color: var(--feature);
         position: absolute;
         bottom: 8px;
         transform: rotateZ(-45deg);
@@ -660,10 +560,9 @@ li::marker {
         text-transform: uppercase;
     }
 .mobile-menu a:hover {
-        color: var(--featured);
+        color: var(--feature);
     }
 /* Slick */
-/* Forms */
 .fixed {
   position: fixed;
 }
@@ -804,14 +703,14 @@ li::marker {
 }
 .border-dark {
   --tw-border-opacity: 1;
-  border-color: rgb(102 118 108 / var(--tw-border-opacity));
+  border-color: rgb(104 96 73 / var(--tw-border-opacity));
 }
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
 }
 .bg-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 242 240 / var(--tw-bg-opacity));
+  background-color: rgb(240 238 225 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -834,7 +733,7 @@ li::marker {
   text-align: right;
 }
 .font-serif {
-  font-family: ibarra-real-nova, serif;
+  font-family: ivyjournal, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -853,11 +752,11 @@ li::marker {
 }
 .text-dark {
   --tw-text-opacity: 1;
-  color: rgb(102 118 108 / var(--tw-text-opacity));
+  color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 .text-feature {
   --tw-text-opacity: 1;
-  color: rgb(179 123 100 / var(--tw-text-opacity));
+  color: rgb(191 148 122 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -866,11 +765,12 @@ li::marker {
 }
 
 :root {
-    --featured: #B37B64;
-    --dark: #66766C;
-    --x-dark: #141715;
-    --main: #CFD1C6;
-    --light: #F2F2F0;
+    --feature: #BF947A;
+    --dark: #686049;
+    --x-dark: #423B24;
+    --main: #ABA785;
+    --light: #F0EEE1;
+    --lighter: #FCFBF9;
 }
 
 
@@ -881,7 +781,7 @@ li::marker {
 
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;
-  color: rgb(102 118 108 / var(--tw-text-opacity));
+  color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {

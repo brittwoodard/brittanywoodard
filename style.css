@@ -1,20 +1,15 @@
-/* Fonts
-font-family: europa, sans-serif; 300, 400, 700
-font-family: ibarra-real-nova, serif; 400, 700
- */
-
-
 /* ----------- Import Tailwind -----*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --featured: #B37B64;
-    --dark: #66766C;
-    --x-dark: #141715;
-    --main: #CFD1C6;
-    --light: #F2F2F0;
+    --feature: #BF947A;
+    --dark: #686049;
+    --x-dark: #423B24;
+    --main: #ABA785;
+    --light: #F0EEE1;
+    --lighter: #FCFBF9;
 }
 
 
@@ -62,31 +57,8 @@ font-family: ibarra-real-nova, serif; 400, 700
 @layer components {
 
     /* Padding */
-    .section-padding {
-        @apply py-20 lg:py-28 px-8 lg:px-20
-    }
 
     /* Buttons */
-    .button {
-        @apply bg-feature text-white py-2 px-4 inline-block font-serif tracking-wider text-lg mt-4 capitalize
-    }
-
-    .button:hover {
-        @apply bg-feature/75 transition duration-500
-    }
-
-    .button-cookies {
-        @apply bg-feature text-white py-2 px-4 inline-block tracking-wider text-sm font-serif hover:bg-feature/75 hover:transition hover:duration-500 mt-4
-    }
-
-    .link {
-        @apply lowercase mb-2 border-b border-feature text-feature
-    }
-
-    .link:hover {
-        @apply text-feature/65 border-feature/65 transition duration-500
-    }
-
     .fa-brands {
         @apply text-xl
     }
@@ -94,63 +66,6 @@ font-family: ibarra-real-nova, serif; 400, 700
     /* Images */
     .bg-image-style {
         @apply bg-cover bg-no-repeat bg-center
-    }
-
-    /* SVG */
-    /* Background SVGs */
-    .svg-bg {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        mask-position: center;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-    }
-
-    /* Inline SVGs (Illustrations/Graphics) */
-    .svg-graphic {
-        width: 100%;
-        height: auto;
-        display: block;
-        /* Prevents extra spacing issues */
-        fill: currentColor;
-        /* Inherits text color for easy styling */
-    }
-
-    /* Overlays */
-    .bg-overlay {
-        position: relative;
-    }
-
-    .bg-overlay::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
-
-    .bg-overlay>* {
-        position: relative;
-    }
-
-    .bg-overlay.light::before {
-        background-color: rgba(207, 209, 198, 0.3);
-
-    }
-
-    .bg-overlay.medium::before {
-        background-color: rgba(207, 209, 198, 0.5);
-
-    }
-
-    .bg-overlay.dark::before {
-        background-color: rgba(207, 209, 198, 0.7);
-
     }
 
     /* Mobile Menu */
@@ -190,7 +105,7 @@ font-family: ibarra-real-nova, serif; 400, 700
     }
 
     .mobile-button.active .mobile-top {
-        border-color: var(--featured);
+        border-color: var(--feature);
         position: absolute;
         top: 8px;
         transform: rotateZ(45deg);
@@ -198,12 +113,12 @@ font-family: ibarra-real-nova, serif; 400, 700
 
     .mobile-button.active .mobile-middle {
         /*   transform: rotateZ(270deg); */
-        border-color: var(--featured);
-        background-color: var(--featured);
+        border-color: var(--feature);
+        background-color: var(--feature);
     }
 
     .mobile-button.active .mobile-bottom {
-        border-color: var(--featured);
+        border-color: var(--feature);
         position: absolute;
         bottom: 8px;
         transform: rotateZ(-45deg);
@@ -243,22 +158,12 @@ font-family: ibarra-real-nova, serif; 400, 700
     }
 
     .mobile-menu a:hover {
-        color: var(--featured);
+        color: var(--feature);
     }
 
     /* Slick */
-    ul.slick-dots li button::before { color: var(--featured); opacity: .25 !important; }
-    ul.slick-dots li button:hover::before { color: var(--featured); opacity: .5 !important; }
-    ul.slick-dots li.slick-active button::before { color: var(--featured); opacity: .75 !important; }
-
-
-
-
-
-
-    /* Forms */
-    .focus-main {
-        @apply focus:outline-none focus:ring-2 focus:ring-main
-    }
+    ul.slick-dots li button::before { color: var(--feature); opacity: .25 !important; }
+    ul.slick-dots li button:hover::before { color: var(--feature); opacity: .5 !important; }
+    ul.slick-dots li.slick-active button::before { color: var(--feature); opacity: .75 !important; }
 
 }
