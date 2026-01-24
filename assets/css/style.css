@@ -627,6 +627,9 @@ li::marker {
 .top-\[2\%\] {
   top: 2%;
 }
+.top-0 {
+  top: 0px;
+}
 .z-20 {
   z-index: 20;
 }
@@ -695,11 +698,20 @@ li::marker {
 .min-h-\[82vh\] {
   min-height: 82vh;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-11\/12 {
   width: 91.666667%;
 }
 .w-full {
   width: 100%;
+}
+.w-28 {
+  width: 7rem;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .grow {
   flex-grow: 1;
@@ -731,6 +743,9 @@ li::marker {
 .justify-items-center {
   justify-items: center;
 }
+.justify-items-stretch {
+  justify-items: stretch;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -747,9 +762,16 @@ li::marker {
 .border-0 {
   border-width: 0px;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(104 96 73 / var(--tw-border-opacity));
+}
+.border-feature {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 148 122 / var(--tw-border-opacity));
 }
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
@@ -761,6 +783,9 @@ li::marker {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-fixed {
+  background-attachment: fixed;
 }
 .p-16 {
   padding: 4rem;
@@ -779,6 +804,14 @@ li::marker {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -787,6 +820,9 @@ li::marker {
 }
 .font-serif {
   font-family: ivyjournal, serif;
+}
+.font-posture {
+  font-family: postureregular, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -803,6 +839,18 @@ li::marker {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
+}
+.font-\[1\.5rem\] {
+  font-weight: 1.5rem;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
@@ -810,6 +858,10 @@ li::marker {
 .text-feature {
   --tw-text-opacity: 1;
   color: rgb(191 148 122 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -832,14 +884,30 @@ li::marker {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+@media (min-width: 640px) {
+
+    .sm\:subtitle {
+    text-transform: uppercase;
+  }
+}
+
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+  .md\:flex {
+    display: flex;
   }
   .md\:max-h-\[40vh\] {
     max-height: 40vh;
@@ -870,5 +938,9 @@ li::marker {
   }
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
