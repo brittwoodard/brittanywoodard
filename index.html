@@ -34,7 +34,7 @@ seo:
   <div class="bg-image-style" style="background-image: url('/uploads/gentle-within-1.jpg');"></div>
 
   <!-- Right Column -->
-  <div class="p-16 h-[100vh] flex items-center">
+  <div class="p-20 h-[100vh] flex items-center">
     <div>
       <p class="subtitle mb-0">You’re the visionary. We help make the vision run.</p>
       <h1 class="py-8">Business <em>systems</em> and <em>automation</em> for wellness leaders who’ve outgrown manual systems.</h1>
@@ -47,28 +47,28 @@ seo:
 
 
 <!-- Problem -->
-<section>
-  <div>
-    <h2>You didn’t build your business to spend your time managing broken systems.</h2>
+<section class="bg-dark text-x-light font-normal p-20">
+  <div class="w-[60%]">
+    <h2 class="heading mb-4">You didn’t build your business to <em>spend your time managing broken systems.</em></h2>
     <p>But when onboarding is clunky, emails go out late, and clients show up confused, you end up manually fixing things your website should already be handling.</p>
   </div>
 </section>
 
 
 <!-- Services -->
-<section>
+<section class="bg-main text-x-light font-normal p-20 text-center">
 
   <div>
-    <h2>Here’s how we can turn your vision into a scalable client experience.</h2>
+    <h2 class="heading mb-12">Here’s how we can turn your <em>vision</em> into a <em>scalable client experience</em>.</h2>
   </div>
 
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 divide-x divide-x-light">
 
     {% for item in page.services %}
-    <div>
-      <h3>{{ item.title }}</h3>
+    <div class="py-8 px-16">
+      <h3 class="subtitle mb-4">{{ item.title }}</h3>
       <p>{{ item.description }}</p>
-      <a href="{{ item.cta.url }}">{{ item.cta.text }}</a>
+      <a href="{{ item.cta.url }}" class="button-light">{{ item.cta.text }}</a>
     </div>
     {% endfor %}
   </div>

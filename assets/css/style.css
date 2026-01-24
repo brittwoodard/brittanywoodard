@@ -494,7 +494,6 @@ li::marker {
 .subtitle {
   text-transform: uppercase;
 }
-/* Styling */
 /* Padding */
 /* Buttons */
 .button {
@@ -514,6 +513,29 @@ li::marker {
   color: rgb(250 249 246 / var(--tw-text-opacity));
 }
 .button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 249 246 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(191 148 122 / var(--tw-text-opacity));
+  transition-duration: 500ms;
+}
+.button-light {
+  display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(191 148 122 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 238 225 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(191 148 122 / var(--tw-text-opacity));
+}
+.button-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 249 246 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -624,11 +646,11 @@ li::marker {
 .right-\[3\%\] {
   right: 3%;
 }
-.top-\[2\%\] {
-  top: 2%;
-}
 .top-0 {
   top: 0px;
+}
+.top-\[2\%\] {
+  top: 2%;
 }
 .z-20 {
   z-index: 20;
@@ -698,20 +720,14 @@ li::marker {
 .min-h-\[82vh\] {
   min-height: 82vh;
 }
-.min-h-screen {
-  min-height: 100vh;
-}
 .w-11\/12 {
   width: 91.666667%;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .w-full {
   width: 100%;
-}
-.w-28 {
-  width: 7rem;
-}
-.flex-grow {
-  flex-grow: 1;
 }
 .grow {
   flex-grow: 1;
@@ -746,6 +762,15 @@ li::marker {
 .justify-items-stretch {
   justify-items: stretch;
 }
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+.divide-x-light > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(250 249 246 / var(--tw-divide-opacity));
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -762,47 +787,45 @@ li::marker {
 .border-0 {
   border-width: 0px;
 }
-.border-b {
-  border-bottom-width: 1px;
-}
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(104 96 73 / var(--tw-border-opacity));
 }
-.border-feature {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 148 122 / var(--tw-border-opacity));
-}
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
+}
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 96 73 / var(--tw-bg-opacity));
 }
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(240 238 225 / var(--tw-bg-opacity));
 }
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(171 167 133 / var(--tw-bg-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-fixed {
-  background-attachment: fixed;
-}
-.p-16 {
-  padding: 4rem;
-}
 .p-2 {
   padding: 0.5rem;
+}
+.p-20 {
+  padding: 5rem;
 }
 .p-5p {
   padding: 5%;
 }
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -812,17 +835,21 @@ li::marker {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
 }
-.font-serif {
-  font-family: ivyjournal, serif;
-}
 .font-posture {
   font-family: postureregular, serif;
+}
+.font-serif {
+  font-family: ivyjournal, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -835,15 +862,15 @@ li::marker {
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[1\.75rem\] {
-  font-size: 1.75rem;
-}
-.font-\[1\.5rem\] {
-  font-weight: 1.5rem;
+.font-normal {
+  font-weight: 400;
 }
 .lowercase {
   text-transform: lowercase;
@@ -859,9 +886,13 @@ li::marker {
   --tw-text-opacity: 1;
   color: rgb(191 148 122 / var(--tw-text-opacity));
 }
-.text-white {
+.text-light {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(240 238 225 / var(--tw-text-opacity));
+}
+.text-x-light {
+  --tw-text-opacity: 1;
+  color: rgb(250 249 246 / var(--tw-text-opacity));
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -883,13 +914,6 @@ li::marker {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
-
-@media (min-width: 640px) {
-
-    .sm\:subtitle {
-    text-transform: uppercase;
-  }
-}
 
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;

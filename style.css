@@ -69,20 +69,16 @@
         @apply uppercase
     }
 
-    /* Styling */
-    .bg-main {
-        @apply bg-main text-lighter font-regular
-    }
-
-    .bg-dark {
-        @apply bg-dark text-lighter font-regular 
-    }
-
     /* Padding */
+
 
     /* Buttons */
     .button {
         @apply py-2 px-8 bg-feature uppercase font-normal text-x-light inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
+    }
+
+    .button-light {
+        @apply py-2 px-8 bg-light uppercase font-normal text-feature inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
     }
 
     .fa-brands {
