@@ -1,0 +1,125 @@
+---
+layout: default
+title: Book a Discovery Call with Gentle Within
+seo: 
+  hide-from-google: true
+---
+
+<section class="p-10p">
+    <div>
+        <h1 class="font-serif text-dark text-3xl mb-2">Thank you for your interest in working with me. I’m glad you’re here.</h1>
+        <p>This form is the first step in connecting. Please share a bit about yourself and what you're looking for. After reviewing your responses, I’ll reach out to schedule a free 30-minute consultation, where we can talk about your needs and see if we’re a good fit. Finding the right therapist is an important part of the healing process. This initial conversation is a space for you to ask questions, share concerns, and decide whether working together feels supportive for you.</p>
+        <p>If we decide to move forward, you’ll receive access to my secure client portal through SimplePractice, where you can complete intake forms, schedule appointments, and communicate securely.</p>
+        <p>I currently offer virtual sessions at this time. I currently do not accept insurance (at this time). Payment is private and receipts for out-of-network reimbursement are available.</p>
+        <p>I’ll respond to your inquiry within 1–2 business days. I look forward to connecting and supporting you in this next step.</p>
+    </div>
+
+
+  <form
+    name="gentle-within-contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
+    action="/thank-you.html"
+    id="gw-form"
+  >
+    <!-- Netlify hidden fields -->
+    <input type="hidden" name="form-name" value="gentle-within-contact" />
+
+    <!-- Honeypot (keep only this one; hide via CSS) -->
+    <p class="hidden">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+
+    <!-- Full Name -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Full Name (First & Last)</legend>
+      <label class="block">
+        <input type="text" name="Full Name" required class="w-full px-1 py-2 border-b border-dark bg-transparent focus:outline-none focus:border-b-2">
+      </label>
+    </fieldset>
+
+    <!-- Email -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Email Address</legend>
+      <label class="block">
+        <input type="email" name="Email" required class="w-full px-1 py-2 border-b border-dark bg-transparent focus:outline-none focus:border-b-2">
+      </label>
+    </fieldset>
+
+    <!-- Phone Number -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Phone Number</legend>
+      <label class="block">
+        <input type="tel" name="Phone" class="w-full px-1 py-2 border-b border-dark bg-transparent focus:outline-none focus:border-b-2">
+      </label>
+    </fieldset>
+
+    <!-- Preferred Contact Method -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Preferred Contact Method</legend>
+      <label class="block mb-2"><input type="radio" name="Preferred Contact Method" value="Phone" class="mr-2"> Phone</label>
+      <label class="block mb-2"><input type="radio" name="Preferred Contact Method" value="Email" class="mr-2"> Email</label>
+      <label class="block"><input type="radio" name="Preferred Contact Method" value="Text" class="mr-2"> Text</label>
+    </fieldset>
+
+    <!-- Exploration / Healing Goals -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">What would you like to explore or heal through our work together?</legend>
+      <label class="block">
+        <textarea name="Exploration Goals" required class="w-full p-2 border border-dark bg-transparent h-32 focus:outline-none focus:border-2"></textarea>
+      </label>
+    </fieldset>
+
+    <!-- Type of Consultation -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">What kind of consultation are you seeking?</legend>
+      <label class="block mb-2"><input type="checkbox" name="Consultation Type" value="Psychotherapy" class="mr-2"> Psychotherapy (talk therapy or counseling)</label>
+      <label class="block mb-2"><input type="checkbox" name="Consultation Type" value="Ayurvedic Wellness" class="mr-2"> Ayurvedic Wellness Consultation</label>
+      <label class="block mb-2"><input type="checkbox" name="Consultation Type" value="Clinical Supervision Interns" class="mr-2"> Clinical Supervision for Social Work Interns (pre-licensure)</label>
+      <label class="block"><input type="checkbox" name="Consultation Type" value="Clinical Supervision Licensed" class="mr-2"> Clinical Supervision for Licensed Clinicians</label>
+    </fieldset>
+
+    <!-- Availability -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">What days/times are you generally available for sessions?</legend>
+      <label class="block">
+        <textarea name="Availability" class="w-full p-2 border border-dark bg-transparent h-32 focus:outline-none focus:border-2"></textarea>
+      </label>
+    </fieldset>
+
+    <!-- How did you hear about Amy -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">How did you hear about me?</legend>
+      <label class="block">
+        <input type="text" name="Referral Source" class="w-full px-1 py-2 border-b border-dark bg-transparent focus:outline-none focus:border-b-2">
+      </label>
+    </fieldset>
+
+    <!-- Questions or Comments -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Do you have any questions or comments you'd like to share?</legend>
+      <label class="block">
+        <textarea name="Questions or Comments" class="w-full p-2 border border-dark bg-transparent h-32 focus:outline-none focus:border-2"></textarea>
+      </label>
+    </fieldset>
+
+    <!-- Consent & Privacy -->
+    <fieldset class="mt-12">
+      <legend class="mb-2">Consent & Privacy Notice</legend>
+      <p>I consent to the collection and secure storage of my information in accordance with privacy laws and understand this form does not establish a therapeutic relationship.</p>
+      <p>If you are experiencing a crisis or emergency, please call 911 or contact the National Suicide Prevention Lifeline at 988 immediately.</p> 
+      <label class="block mb-2"><input type="radio" name="Consent" value="I consent" required class="mr-2"> I consent</label>
+      <label class="block"><input type="radio" name="Consent" value="I do not consent" class="mr-2"> I do not consent</label>
+    </fieldset>
+
+    <!-- Recaptcha -->
+    <div data-netlify-recaptcha class="mt-8"></div>
+
+    <!-- Submit -->
+    <div class="text-center">
+      <button type="submit" class="button mt-8">Submit</button>
+    </div>
+  </form>
+</section>

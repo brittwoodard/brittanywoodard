@@ -1,0 +1,26 @@
+header:
+  - title: Home
+    url: /index
+  - title: About
+    url: /index#about  
+  - title: Services
+    url: /index#services
+  - title: Contact
+    url: /contact
+  - title: Book a Discovery Call
+    url: /discover
+footer:
+  pages: 
+   - title: About
+     url: /index#about  
+   - title: Contact
+     url: /contact
+   - title: Book a Discovery Call
+     url: /discover
+  services: 
+   - title: Psychotherapy
+     url: /psychotherapy
+   - title: Ayurvedic Consultations
+     url: /ayurvedic-consultations
+   - title: Organizational Consulting
+     url: /organizational-consulting
