@@ -7,20 +7,20 @@ collections:
 livereload: true
 
 # Site settings
-title: Gentle Within
-description: Trauma-informed somatic therapy and mindful movement in New York
-url: "https://www.gentlewithin.com"  
+title: FAF9F6
+description: 
+url: "https://www.brittanywoodard.com"  
 baseurl: ""  # leave empty if site is served at domain root
 lang: en
 timezone: America/New_York
 
 author:
-  name: Gentle Within
-  url: "https://www.gentlewithin.com"
+  name: FAF9F6
+  url: "https://www.brittanywoodard.com"
 
 logo: "/uploads/gentle-within-17.png"
 social:
-  name: Gentle Within
+  name: FAF9F6
   links:
     - https://www.instagram.com/{{ site.site-settings.social.instagram_username }}
     - https://www.linkedin.com/{{ site.site-settings.social.linkedin_username }}

@@ -9,7 +9,7 @@
     --x-dark: #423B24;
     --main: #ABA785;
     --light: #F0EEE1;
-    --lighter: #FCFBF9;
+    --x-light: #FAF9F6;
 }
 
 
@@ -22,7 +22,7 @@
     }
 
     body {
-        @apply font-sans font-light text-x-dark antialiased
+        @apply bg-x-light font-sans font-light text-x-dark antialiased
     }
 
     nav a:hover {
@@ -31,6 +31,10 @@
 
     footer nav a {
         @apply font-serif text-dark
+    }
+
+    h1 {
+        @apply font-serif text-[2rem] leading-9;
     }
 
     p {
@@ -56,9 +60,31 @@
 
 @layer components {
 
+    /* Typography */
+    .heading {
+        @apply font-serif text-2xl
+    }
+
+    .subtitle {
+        @apply uppercase
+    }
+
+    /* Styling */
+    .bg-main {
+        @apply bg-main text-lighter font-regular
+    }
+
+    .bg-dark {
+        @apply bg-dark text-lighter font-regular 
+    }
+
     /* Padding */
 
     /* Buttons */
+    .button {
+        @apply py-2 px-8 bg-feature uppercase font-normal text-x-light inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
+    }
+
     .fa-brands {
         @apply text-xl
     }

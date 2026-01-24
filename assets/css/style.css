@@ -330,6 +330,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 249 246 / var(--tw-bg-opacity));
   font-family: europa, sans-serif;
   font-weight: 300;
   --tw-text-opacity: 1;
@@ -350,6 +352,11 @@ footer nav a {
   font-family: ivyjournal, serif;
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
+}
+h1 {
+  font-family: ivyjournal, serif;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 p {
   margin-bottom: 1rem;
@@ -478,8 +485,41 @@ li::marker {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+/* Typography */
+.heading {
+  font-family: ivyjournal, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.subtitle {
+  text-transform: uppercase;
+}
+/* Styling */
 /* Padding */
 /* Buttons */
+.button {
+  display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(191 148 122 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 148 122 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(250 249 246 / var(--tw-text-opacity));
+}
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 249 246 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(191 148 122 / var(--tw-text-opacity));
+  transition-duration: 500ms;
+}
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -604,6 +644,9 @@ li::marker {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -633,6 +676,9 @@ li::marker {
 }
 .hidden {
   display: none;
+}
+.h-\[100vh\] {
+  height: 100vh;
 }
 .h-\[50vh\] {
   height: 50vh;
@@ -716,6 +762,9 @@ li::marker {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.p-16 {
+  padding: 4rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -725,6 +774,10 @@ li::marker {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .text-center {
   text-align: center;
@@ -770,7 +823,7 @@ li::marker {
     --x-dark: #423B24;
     --main: #ABA785;
     --light: #F0EEE1;
-    --lighter: #FCFBF9;
+    --x-light: #FAF9F6;
 }
 
 

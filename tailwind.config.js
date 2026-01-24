@@ -33,7 +33,7 @@ module.exports = {
         },
         colors: {
           'light': '#F0EEE1',
-          'lighter': '#FCFBF9',
+          'x-light': '#FAF9F6',
           'dark': '#686049',
           'x-dark': '#423B24',
           'main': '#ABA785',
