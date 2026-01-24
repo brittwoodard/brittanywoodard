@@ -2,6 +2,23 @@
 layout: default
 title: 
 description: 
+services:
+ - title: The Whole Package
+   description: Full systems strategy, setup, and automation—done-for-you, or delivered with hands-on team training. Built around your business, your tools, and your growth goals.
+   cta: 
+     url: 
+     text: Automate my business
+ - title: Systems Partner
+   description: You don’t need a full rebuild. You need a tech-savvy partner who can maintain, optimize, and evolve your systems as your business grows.
+   cta: 
+     url: 
+     text: Let’s work together
+ - title: Website Strategy + Build
+   description: A clean, custom site that’s designed to grow with your business. Built with strategy to reflect your brand, connect to your systems, and give your clients a smooth experience.
+   cta: 
+     url: 
+     text: Explore the portfolio
+seo:
   title: 
   description: 
   social_image: 
@@ -23,4 +40,33 @@ description:
 
   <!-- Right Column -->
   <div class="bg-image-style" style="background-image: url('/uploads/gentle-within-1.jpg');"></div>
+</section>
+
+
+<!-- Problem -->
+<section>
+  <div>
+    <h2>You didn’t build your business to spend your time managing broken systems.</h2>
+    <p>But when onboarding is clunky, emails go out late, and clients show up confused, you end up manually fixing things your website should already be handling.</p>
+  </div>
+</section>
+
+
+<!-- Services -->
+<section>
+
+  <div>
+    <h2>Here’s how we can turn your vision into a scalable client experience.</h2>
+  </div>
+
+  <div class="grid grid-cols-3">
+
+    {% for item in page.services %}
+    <div>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <a href="{{ item.cta.url }}">{{ item.cta.text }}</a>
+    </div>
+    {% endfor %}
+  </div>
 </section>
