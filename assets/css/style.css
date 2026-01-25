@@ -743,6 +743,9 @@ li:last-child {
 .w-full {
   width: 100%;
 }
+.w-\[50\%\] {
+  width: 50%;
+}
 .grow {
   flex-grow: 1;
 }
