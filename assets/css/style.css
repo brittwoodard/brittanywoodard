@@ -752,6 +752,21 @@ li:last-child {
 .list-none {
   list-style-type: none;
 }
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
+}
+.break-inside-avoid {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -926,6 +941,10 @@ li:last-child {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.\[break-inside\:avoid\] {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
 
 :root {
     --feature: #BF947A;
@@ -997,6 +1016,18 @@ li:last-child {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .md\:\[column-count\:2\] {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .md\:\[column-fill\:balance\] {
+    -moz-column-fill: balance;
+         column-fill: balance;
+  }
+  .md\:\[column-gap\:2\.5rem\] {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 }
 
