@@ -652,6 +652,12 @@ li:last-child {
 .z-50 {
   z-index: 50;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -919,6 +925,10 @@ li:last-child {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .text-center {
   text-align: center;
 }
@@ -1009,6 +1019,12 @@ li:last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1046,6 +1062,12 @@ li:last-child {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .md\:gap-20 {
     gap: 5rem;
   }
@@ -1060,6 +1082,9 @@ li:last-child {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1093,6 +1118,9 @@ li:last-child {
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-x-reverse: 0;
