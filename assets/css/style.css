@@ -671,6 +671,10 @@ li:last-child {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -881,6 +885,9 @@ li:last-child {
 .p-5p {
   padding: 5%;
 }
+.p-8 {
+  padding: 2rem;
+}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -999,11 +1006,18 @@ li:last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
   .md\:flex {
     display: flex;
+  }
+  .md\:grid {
+    display: grid;
   }
   .md\:max-h-\[40vh\] {
     max-height: 40vh;
@@ -1014,17 +1028,40 @@ li:last-child {
   .md\:w-\[40\%\] {
     width: 40%;
   }
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:gap-20 {
     gap: 5rem;
   }
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
   .lg\:block {
     display: block;
+  }
+  .lg\:grid {
+    display: grid;
   }
   .lg\:min-h-\[100\%\] {
     min-height: 100%;
@@ -1035,8 +1072,39 @@ li:last-child {
   .lg\:w-\[80\%\] {
     width: 80%;
   }
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+  .lg\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
+  }
+  .lg\:divide-x-light > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(250 249 246 / var(--tw-divide-opacity));
+  }
+  .lg\:p-20 {
+    padding: 5rem;
+  }
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
