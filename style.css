@@ -38,19 +38,15 @@
     }
 
     p {
-        @apply mb-4
-    }
-
-    p:last-child {
-        @apply mb-0
+        @apply mb-4 last:mb-0
     }
 
     ul {
-        @apply list-disc marker:text-feature
+        @apply list-disc
     }
 
     li {
-        @apply marker:text-feature
+        @apply mb-4 last:mb-0
     }
 
 }
@@ -74,11 +70,11 @@
 
     /* Buttons */
     .button {
-        @apply py-2 px-8 bg-feature uppercase font-normal text-x-light inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
+        @apply py-2 px-8 bg-feature uppercase font-semibold text-x-light inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
     }
 
     .button-light {
-        @apply py-2 px-8 bg-light uppercase font-normal text-feature inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
+        @apply py-2 px-8 bg-light uppercase font-semibold text-feature inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
     }
 
     .fa-brands {
