@@ -42,7 +42,7 @@
     }
 
     ul {
-        @apply list-disc
+        @apply list-none
     }
 
     li {
