@@ -115,28 +115,28 @@ cta:
 
 
 <!-- Desires -->
-<section>
-    <div>
+<section class="bg-light p-20">
+    <div class="heading w-[66%]">
         <h2>{{ page.desires.heading_html }}</h2>
     </div>
-    <div>
+    <div class="text-right w-[55%] ml-auto mt-20">
         {{ page.desires.description_html }}
     </div>
 </section>
 
 
 <!-- System -->
-<section class="grid grid-cols-3">
-    <div>
-        <h2 class="heading">{{ page.desires.heading_html }}</h2>
-        <p>Here's how we do it...</p>
+<section class="grid grid-cols-2 p-20">
+    <div class="mr-20">
+        <h2 class="heading mb-8">{{ page.desires.heading_html }}</h2>
+        <p>{{ page.desires.description_html }}</p>
     </div>
 
-    <div class="col-span-2">
+    <div>
         {% for item in page.system.steps %}
-        <div class="border-b border-x-dark">
-            <p class="subtitle">{{ item.title }}</p>
-            <p>{{ item.description }}</p>
+        <div class="border-b border-x-dark mb-8 last:mb-0">
+            <p class="subtitle mb-2">{{ item.title }}</p>
+            <p class="pb-2">{{ item.description }}</p>
         </div>
     {% endfor %}
     </div>
