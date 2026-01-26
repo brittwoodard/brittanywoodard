@@ -143,7 +143,7 @@ cta:
 
 
 <!-- Includes -->
-<section class="grid grid-cols-2 pb-20 mr-20 mb-20 border-b border-x-dark">
+<section class="grid grid-cols-2 mt-12 pb-20 mr-20 mb-20 border-b border-x-dark">
 
     <!-- Left Column -->
     <div class="bg-image-style min-h-[60vh]" style="background-image: url('{{ page.includes.featured_image }}');"></div>
@@ -161,20 +161,20 @@ cta:
 </section>
 
 <!-- FAQ -->
-<section class="bg-x-dark text-x-light section-padding">
+<section class="bg-dark text-x-light p-20">
     <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-        <h2 class="text-center font-serif text-2xl text-x-light mb-4">{{ page.faq.heading_html }}</h2>
+        <h2 class="heading text-center mb-8">{{ page.faq.heading_html }}</h2>
         <ul class="list-none ml-0">
             {% for item in page.faq.questions %}
-            <li x-data="{ open: false }" class="border border-x-light p-4 border-b-0 last:border-b-[1px]">
+            <li x-data="{ open: false }" class="border border-x-light p-4 border-b-0 last:border-b-[1px] mb-0">
                 <button @click="open = ! open" class="flex justify-between w-full">
-                    <h3 class="text-left font-serif">{{item.question}}</h3>
+                    <h3 class="text-left font-serif">{{ item.question }}</h3>
 
                     <span x-show="!open">→</span>
                     <span x-show="open">&nbsp;&nbsp;↓</span>
                 </button>
                 <div x-show="open" @click.outside="open = false" class="">
-                    <p class="last:mb-0">{{item.answer_html}}</p>
+                    <p class="last:mb-0 mt-2">{{ item.answer_html}}</p>
                 </div>
             </li>
             {% endfor %}
