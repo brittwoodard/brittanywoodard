@@ -7,12 +7,16 @@ hero:
   featured_image: /uploads/gentle-within-1.jpg
 painpoints: 
   heading_html: Your programs are exceptional. Your following is growing. Your website is getting traffic.
-  description_html: |
-    <p>People want to work with you. They’re excited. They ask how to join. And then...</p>
-    <p>Invoices go out manually. Follow-up slips through the cracks. A few people enroll. Others disappear before they even get the chance.</p>
-    <p>You’re spending more time sending emails, checking in with your team, and managing access than actually doing the work you love.</p>
-    <p>So you stay glued to your laptop, while your marketing efforts bring in disappointing results.</p>
-    <p>Your systems don’t match your expertise… and you feel it. You’re ready to get your business automated so that you can get back to doing what you love.</p>
+  description-left_html: |
+    <p>People want to work with you. They’re excited. They ask how to join. What the next step is. When they can get started. And then...</p>
+    <p>Invoices go out manually. Follow-ups slip through the cracks. A few clients make it through. But many disappear before they ever say yes.</p>
+    <p>Instead of running a smooth operation, you’re stuck double-checking who’s paid, sending scattered emails, and trying to remember who still needs onboarding.</p>
+    <p>Your backend is all over the place. Your systems don’t talk to each other. And you feel it—not just in your calendar, but in your body.</p>
+  description-right_html: |
+    <p>You’re overwhelmed, behind, and spending more time reacting than creating.</p>
+    <p>All while your marketing is finally gaining traction—but without the infrastructure to support it. It’s like pouring water into a leaky bucket.</p>
+    <p>You didn’t start your business to be tech support. You started it to help people. To guide them. To do meaningful work.</p>
+    <p>Your business doesn't match your expertise… and you feel it. You’re ready to get your business automated so that you can get back to doing what you love.</p>
 desires: 
   heading_html: You want to do the work you’re actually here for, creating thoughtful programs and leading your community with your expertise, without being pulled into admin all day.
   description_html: |
@@ -89,11 +93,23 @@ cta:
 
 
 <!-- Painponts -->
-<section>
-  <h2>{{ page.painpoints.heading }}</h2>
+<section class="bg-main text-x-light p-20">
+  <h2 class="heading text-center mb-10">
+    {{ page.painpoints.heading_html }}
+  </h2>
 
-  <div class="columns-1 md:[column-count:2] md:[column-gap:2.5rem] md:[column-fill:balance]">
-    {{ page.painpoints.description_html }}
+  <div class="grid grid-cols-1 md:grid-cols-2 items-start">
+    
+    <!-- Left column -->
+    <div class="text-right border-r border-x-light px-8">
+      {{ page.painpoints.description-left_html }}
+    </div>
+
+    <!-- Right column -->
+    <div class="text-left px-8">
+      {{ page.painpoints.description-right_html }}
+    </div>
+
   </div>
 </section>
 
