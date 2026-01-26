@@ -8,6 +8,27 @@ system:
       description: Together, we design how leads, payments, and onboarding should flow.
     - title: 3. Build it and automate it
       description: We implement the tech, connect the tools, and make it all run without manual work.
+faq:
+  heading_html: Frequently Asked Questions
+  questions:
+   - question: What platforms do you work with?
+     answer_html: I'm not tied to a single platform. I’ll recommend tools based on how your business operates, your goals, and your budget. In many cases, we optimise what you’re already using. If a migration makes sense, we’ll guide that too.
+   - question: Will I need to migrate everything to a specific platform?
+     answer_html: No. A full migration is never required to work together. Sometimes it’s the right move, sometimes it isn’t. We’ll talk it through and make a recommendation based on what will support your business long-term.
+   - question: How long does the process take?
+     answer_html: It depends on scope, but most projects run between one and three months. You’ll have a clear timeline before we begin.
+   - question: Will this work with my existing website?
+     answer_html: In most cases, yes. We integrate forms, flows, and automations directly into your current site. If your website is limiting what you want to do, we’ll be upfront about that.
+   - question: What happens after the project is complete?
+     answer_html: You’ll have fully tested systems in place, along with documentation where it’s helpful. You may continue working with me for ongoing systems support, but there’s no obligation.
+   - question: Is this a good fit if I’m just starting out?
+     answer_html: Yes. Setting up your systems early saves time and stress later, and gives your business a stronger foundation as it grows.
+cta: 
+  heading_html: Are you ready for a website that does the work for you?
+  description: Let’s build systems that scale, so you can get back to doing what you love.
+  button: 
+    url: #
+    text: Automate my business
 ---
 
 <!-- Hero Banner -->
@@ -102,3 +123,29 @@ system:
         <a href="#" class="button mt-4">Automate My Business</a>
     </div>
 </section>
+
+<!-- FAQ -->
+<section class="bg-x-dark text-x-light section-padding">
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <h2 class="text-center font-serif text-2xl text-x-light mb-4">{{ page.faq.heading_html }}</h2>
+        <ul class="list-none ml-0">
+            {% for item in page.faq.questions %}
+            <li x-data="{ open: false }" class="border border-x-light p-4 border-b-0 last:border-b-[1px]">
+                <button @click="open = ! open" class="flex justify-between w-full">
+                    <h3 class="text-left font-serif">{{item.question}}</h3>
+
+                    <span x-show="!open">→</span>
+                    <span x-show="open">&nbsp;&nbsp;↓</span>
+                </button>
+                <div x-show="open" @click.outside="open = false" class="">
+                    <p class="last:mb-0">{{item.answer_html}}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+
+<!-- CTA -->
+{% include cta.html %}

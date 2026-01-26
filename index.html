@@ -21,6 +21,12 @@ services:
    cta: 
      url: 
      text: Explore the portfolio
+cta: 
+  heading_html: Are you ready for a website that <em>does the work for you?</em>
+  description: Let’s build systems that scale, so you can get back to doing what you love.
+  button: 
+    url: #
+    text: Get Started
 seo:
   title: 
   description: 
@@ -87,7 +93,7 @@ seo:
 
     <!-- Right Column -->
     <div class="mt-20 md:mt-0 mx-8 lg:mx-20 border-y border-x-dark py-8 flex items-center">
-      <div class="mb-4 md:mb-0 ">
+      <div class="mb-4 md:mb-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
         <h2 class="heading mb-4">A business that <em>runs without constant oversight</em></h2>
       <ul class="list-none">
         <li data-aos="fade" data-aos-offset="300" data-aos-duration="2000">Your business runs smoothly, even when you take a day off. No more babysitting.</li>
@@ -117,20 +123,20 @@ seo:
 
 
 <!-- About -->
-<section class="grid md:grid-cols-3 my-20" data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+<section class="grid md:grid-cols-3 my-20">
 
   <!-- Left Column -->
-  <div class="heading px-8 lg:px-20 mb-8 md:mb-0">
+  <div class="heading px-8 lg:px-20 mb-8 md:mb-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
     <h2><em>I build systems</em> for wellness leaders that <em>need more than a beautiful website</em>.</h2>
   </div>
 
   <!-- Middle Column -->
-  <div class="px-8 lg:px-20 border-x border-x-dark">
+  <div class="px-8 lg:px-20 border-x border-x-dark" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
     <div class="bg-image-style min-h-[80vh]" style="background-image: url('/uploads/gentle-within-1.jpg');"></div>
   </div>
 
   <!-- Right Column -->
-  <div class="px-8 lg:px-20 text-right flex items-end mt-8 md:mt-0">
+  <div class="px-8 lg:px-20 text-right flex items-end mt-8 md:mt-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
     <div>
       <div>
         <p>I'm Brittany and I work with wellness brands who’ve outgrown messy setups and sites that either look good but don’t do much, or get the job done but feel off-brand.</p>
@@ -143,10 +149,4 @@ seo:
 
 
 <!-- CTA -->
-<section class="bg-main py-20 px-8 lg:px-20 lg:p-20 text-x-light">
-  <div data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
-    <h2 class="heading mb-4">Are you ready for a website that <em>does the work for you?</em></h2>
-    <p class="font-normal">Let’s build systems that scale, so you can get back to doing what you love.</p>
-    <a href="#" class="button-light mt-4">Get Started</a>
-  </div>
-</section>
+{% include cta.html %}
