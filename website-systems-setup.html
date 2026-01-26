@@ -38,15 +38,15 @@ includes:
   heading_html: What’s included
   description_html: |
     <ul>
-        <li>Full setup or audit of your backend, whether you’re starting from scratch or optimising what’s already in place</li>
-        <li>A 60-minute immersion session to understand your goals, team, processes, and current client journey</li>
+        <li>Full setup or audit of your backend</li>
+        <li>A meeting to understand your goals, team, processes, and current client journey</li>
         <li>A systems strategy with recommendations for how your lead capture, follow-up, onboarding, and offboarding should flow</li>
         <li>Lead capture strategy across each of your offers, so interest turns into actual connection</li>
         <li>Design and build of all forms, automations, and emails</li>
         <li>Integration of all forms directly into your website</li>
         <li>Full end-to-end testing before launch</li>
     </ul>
-    <p class="mt-4 italic">The Whole Package is priced between €2,500 and €15,000, depending on the number of offerings, automations, and overall scope.</p>
+    <p class="mt-4 italic">The Whole Package is priced between €1,500 and €7,500, depending on the number of offerings, automations, and overall scope.</p>
     <p class="italic">If you have a team who can take on implementation, we’ll focus on strategy and training, with pricing adjusted to suit.</p>
     <p class="italic">To receive a tailored proposal, please complete the questionnaire below.</p>
 faq:
@@ -69,7 +69,7 @@ cta:
   description: Let’s build systems that scale, so you can get back to doing what you love.
   button: 
     url: #
-    text: Automate my business
+    text: Connect to learn more
 ---
 
 <!-- Hero Banner -->
@@ -93,45 +93,49 @@ cta:
 
 <!-- Painponts -->
 <section class="bg-main text-x-light p-20">
-  <h2 class="heading text-center mb-10">
-    {{ page.painpoints.heading_html }}
-  </h2>
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <h2 class="heading text-center mb-10">
+        {{ page.painpoints.heading_html }}
+        </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 items-start">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-start">
     
-    <!-- Left column -->
-    <div class="text-right border-r border-x-light px-8">
-      {{ page.painpoints.description-left_html }}
-    </div>
+        <!-- Left column -->
+        <div class="text-right border-r border-x-light px-8">
+        {{ page.painpoints.description-left_html }}
+        </div>
 
-    <!-- Right column -->
-    <div class="text-left px-8">
-      {{ page.painpoints.description-right_html }}
-    </div>
+        <!-- Right column -->
+        <div class="text-left px-8">
+        {{ page.painpoints.description-right_html }}
+        </div>
 
-  </div>
+        </div>
+    </div>
 </section>
 
 
 <!-- Desires -->
 <section class="bg-light p-20">
-    <div class="heading w-[66%]">
-        <h2>{{ page.desires.heading_html }}</h2>
-    </div>
-    <div class="text-right w-[55%] ml-auto mt-20">
-        {{ page.desires.description_html }}
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+        <div class="heading w-[66%]">
+            <h2>{{ page.desires.heading_html }}</h2>
+        </div>
+        <div class="text-right w-[55%] ml-auto mt-20">
+            {{ page.desires.description_html }}
+        </div>
     </div>
 </section>
 
 
 <!-- System -->
 <section class="grid grid-cols-2 p-20">
-    <div class="mr-20">
+    <div class="mr-20" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
         <h2 class="heading mb-8">{{ page.desires.heading_html }}</h2>
         <p>{{ page.desires.description_html }}</p>
     </div>
 
-    <div>
+    <div data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
         {% for item in page.system.steps %}
         <div class="border-b border-x-dark mb-8 last:mb-0">
             <p class="subtitle mb-2">{{ item.title }}</p>
@@ -143,7 +147,7 @@ cta:
 
 
 <!-- Includes -->
-<section class="grid grid-cols-2 mt-12 pb-20 mr-20 mb-20 border-b border-x-dark">
+<section class="grid grid-cols-2 mt-12 pb-20 mr-20 mb-20 border-b border-x-dark" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
 
     <!-- Left Column -->
     <div class="bg-image-style min-h-[60vh]" style="background-image: url('{{ page.includes.featured_image }}');"></div>
