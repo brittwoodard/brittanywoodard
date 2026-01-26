@@ -1,0 +1,16 @@
+<section class="grid md:grid-cols-2 mt-20 pb-20 mr-8 lg:mr-20 ml-8 md:ml-0 mb-20 border-b border-x-dark" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
+
+    <!-- Left Column -->
+    <div class="bg-image-style min-h-[60vh]" style="background-image: url('{{ page.includes.featured_image }}');"></div>
+
+    <!-- Right Column -->
+    <div class="mt-12 md:mt-0 md:ml-8 lg:ml-20">
+        <div class="border-b border-x-dark pb-2 mb-8">
+            <h2 class="heading">{{ page.includes.heading_html }}</h2>
+        </div>
+        <div>
+            {{ page.includes.description_html }}
+        </div>
+        <a href="{{ page.cta.button.url }}" class="button mt-8">{{ page.cta.button.text }}</a>
+    </div>
+</section>

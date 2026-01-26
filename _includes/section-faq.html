@@ -1,0 +1,23 @@
+<section class="bg-dark text-x-light py-20 px-8 lg:px-20">
+  <div data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+    <h2 class="heading text-center mb-8">{{ page.faq.heading_html }}</h2>
+
+    <div class="ml-0">
+      {% for item in page.faq.questions %}
+        <div x-data="{ open: false }" class="border border-x-light p-4 border-b-0 last:border-b-[1px]">
+          <button @click="open = !open" class="flex justify-between w-full">
+            <h3 class="text-left font-serif">{{ item.question }}</h3>
+
+            <span x-show="!open">→</span>
+            <span x-show="open">&nbsp;&nbsp;↓</span>
+          </button>
+
+          <div x-show="open" @click.outside="open = false">
+            <p class="last:mb-0 mt-2">{{ item.answer_html }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

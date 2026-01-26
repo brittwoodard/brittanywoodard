@@ -683,9 +683,6 @@ li:last-child {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -701,17 +698,11 @@ li:last-child {
 .ml-4 {
   margin-left: 1rem;
 }
-.ml-8 {
-  margin-left: 2rem;
-}
 .ml-auto {
   margin-left: auto;
 }
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mr-8 {
-  margin-right: 2rem;
 }
 .mt-12 {
   margin-top: 3rem;
@@ -727,6 +718,15 @@ li:last-child {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.ml-8 {
+  margin-left: 2rem;
+}
+.mr-8 {
+  margin-right: 2rem;
 }
 .block {
   display: block;
@@ -1025,17 +1025,17 @@ li:last-child {
   .md\:mb-0 {
     margin-bottom: 0px;
   }
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-  .md\:ml-8 {
-    margin-left: 2rem;
-  }
   .md\:ml-\[1\.5rem\] {
     margin-left: 1.5rem;
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+  .md\:ml-8 {
+    margin-left: 2rem;
   }
   .md\:flex {
     display: flex;
@@ -1063,6 +1063,12 @@ li:last-child {
   }
   .md\:w-\[80\%\] {
     width: 80%;
+  }
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+  .md\:w-\[65\%\] {
+    width: 65%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1130,6 +1136,9 @@ li:last-child {
   }
   .lg\:w-\[80\%\] {
     width: 80%;
+  }
+  .lg\:w-\[55\%\] {
+    width: 55%;
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));

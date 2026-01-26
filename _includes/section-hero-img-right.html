@@ -1,0 +1,16 @@
+<section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+
+  <!-- Left Column -->
+  <div class="p-8 lg:p-20 h-[100vh] flex items-center">
+    <div>
+      <p class="subtitle mb-0">{{ page.hero.title }}</p>
+      <h1 class="py-8">{{ page.hero.heading_html }}</h1>
+      <p>{{ page.hero.description }}</p>
+      <a href="{{ page.cta.button.url }}" class="button mt-4">{{ page.cta.button.text }}</a>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="bg-image-style" style="background-image: url('{{ page.hero.featured_image }}');"></div>
+
+</section>
