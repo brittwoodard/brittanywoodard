@@ -889,6 +889,9 @@ li:last-child {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[bottom\] {
+  background-position: bottom;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1019,34 +1022,28 @@ li:last-child {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
 
-
 .last\:border-b-\[1px\]:last-child {
   border-bottom-width: 1px;
 }
-
 
 .hover\:border-feature:hover {
   --tw-border-opacity: 1;
   border-color: rgb(191 148 122 / var(--tw-border-opacity));
 }
 
-
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 
-
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
   color: rgb(191 148 122 / var(--tw-text-opacity));
 }
-
 
 .hover\:transition:hover {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -1056,23 +1053,19 @@ li:last-child {
   transition-duration: 150ms;
 }
 
-
 .hover\:duration-500:hover {
   transition-duration: 500ms;
 }
 
-
 .group:hover .group-hover\:opacity-0 {
   opacity: 0;
 }
-
 
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
   }
 }
-
 
 @media (min-width: 768px) {
   .md\:mb-0 {
@@ -1157,7 +1150,6 @@ li:last-child {
     text-align: right;
   }
 }
-
 
 @media (min-width: 1024px) {
   .lg\:mx-20 {
