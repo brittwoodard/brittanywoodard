@@ -785,12 +785,6 @@ li:last-child {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -814,12 +808,6 @@ li:last-child {
 }
 .justify-items-stretch {
   justify-items: stretch;
-}
-.gap-20 {
-  gap: 5rem;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -939,9 +927,6 @@ li:last-child {
 .pb-20 {
   padding-bottom: 5rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
-}
 .text-left {
   text-align: left;
 }
@@ -1034,39 +1019,34 @@ li:last-child {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
+
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
+
 
 .last\:border-b-\[1px\]:last-child {
   border-bottom-width: 1px;
 }
 
-.hover\:border-x-light:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 248 243 / var(--tw-border-opacity));
-}
 
 .hover\:border-feature:hover {
   --tw-border-opacity: 1;
   border-color: rgb(191 148 122 / var(--tw-border-opacity));
 }
 
-.hover\:border-x-light:hover {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(240 238 225 / var(--tw-border-opacity));
-  border-right-color: rgb(240 238 225 / var(--tw-border-opacity));
-}
 
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
 }
 
+
 .hover\:text-feature:hover {
   --tw-text-opacity: 1;
   color: rgb(191 148 122 / var(--tw-text-opacity));
 }
+
 
 .hover\:transition:hover {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -1076,19 +1056,23 @@ li:last-child {
   transition-duration: 150ms;
 }
 
+
 .hover\:duration-500:hover {
   transition-duration: 500ms;
 }
 
+
 .group:hover .group-hover\:opacity-0 {
   opacity: 0;
 }
+
 
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
   }
 }
+
 
 @media (min-width: 768px) {
   .md\:mb-0 {
@@ -1173,6 +1157,7 @@ li:last-child {
     text-align: right;
   }
 }
+
 
 @media (min-width: 1024px) {
   .lg\:mx-20 {
