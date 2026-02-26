@@ -669,6 +669,9 @@ li:last-child {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -782,6 +785,9 @@ li:last-child {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -797,6 +803,9 @@ li:last-child {
 .aspect-portrait {
   aspect-ratio: 3 / 4;
 }
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -808,6 +817,9 @@ li:last-child {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .min-h-\[100vh\] {
   min-height: 100vh;
@@ -829,6 +841,9 @@ li:last-child {
 }
 .min-h-full {
   min-height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-11\/12 {
   width: 91.666667%;
@@ -888,6 +903,11 @@ li:last-child {
 }
 .gap-16 {
   gap: 4rem;
+}
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -971,6 +991,16 @@ li:last-child {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1064,6 +1094,9 @@ li:last-child {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
