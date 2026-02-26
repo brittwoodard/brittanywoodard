@@ -699,6 +699,12 @@ li:last-child {
 .m-2 {
   margin: 0.5rem;
 }
+.m-8 {
+  margin: 2rem;
+}
+.m-16 {
+  margin: 4rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -876,6 +882,12 @@ li:last-child {
 }
 .justify-items-stretch {
   justify-items: stretch;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-16 {
+  gap: 4rem;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;

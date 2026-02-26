@@ -3,6 +3,8 @@ layout: default
 ---
 
 <section class="grid grid-cols-2">
+
+    <!-- Left Column -->
     <div>
         <div class="relative h-[100vh] w-full overflow-hidden">
             <video autoplay loop muted playsinline class="absolute inset-0 min-w-full min-h-full w-full h-full object-cover scale-[1.5]">
@@ -10,8 +12,13 @@ layout: default
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="bg-image-style h-full" style="background-image: url('/uploads/projects/ayurvedic-internship-mobile.jpg');"></div>
-        <div class="bg-image-style h-full" style="background-image: url('/uploads/projects/ayurvedic-internship-tablet.jpg');"></div>
     </div>
-    <div></div>
+
+    <!-- Right Column -->
+    <div>
+        <div class="grid grid-cols-2 gap-16 m-16">
+            <div class="bg-image-style aspect-portrait" style="background-image: url('/uploads/projects/ayurvedic-internship-mobile.jpg');"></div>
+            <div class="bg-image-style aspect-portrait" style="background-image: url('/uploads/projects/ayurvedic-internship-tablet.jpg');"></div>
+        </div>
+    </div>
 </section>
