@@ -1,11 +1,15 @@
 ---
 layout: default
+gallery:
+  - image_path: /uploads/projects/wbw/wbw-mobile.jpg
+  - image_path: /uploads/projects/wbw/wbw-tablet-alt.jpg
+  - image_path: /uploads/projects/wbw/wbw-laptop.png
 ---
 
-<section class="grid grid-cols-2">
+<section class="md:grid md:grid-cols-2">
 
     <!-- Left Column -->
-    <div class="sticky top-0 h-screen w-full overflow-hidden">
+    <div class="relative md:sticky top-0 h-[60vh] md:h-screen w-full overflow-hidden">
         <video autoplay loop muted playsinline class="absolute inset-0 h-full w-full object-cover">
             <source src="/uploads/projects/wbw/website-demo.mp4" type="video/mp4">
             <source src="/uploads/projects/wbw/website-demo.webm" type="video/webm">
@@ -14,7 +18,7 @@ layout: default
     </div>
 
     <!-- Right Column -->
-    <div class="p-8 lg:p-20">
+    <div class="md:mt-20 pt-20 px-8 lg:p-20">
         <div>
             <h1 class="heading">Whole Body Wellness</h1>
             <div>
@@ -53,7 +57,24 @@ layout: default
     </div>
 </section>
 
+<section class="hidden md:block py-20">
+    <div class="grid grid-cols-3 gap-8 lg:gap-20">
+        {% for item in page.gallery limit:3 %}
+        <div class="bg-image-style aspect-portrait border"
+            style="background-image: url('{{ item.image_path }}');"></div>
+        {% endfor %}
+    </div>
+</section>
 
-<!-- 
+<section class="md:hidden my-8 md:my-20 mx-8">
+    <div class="slider-container">
+        {% for item in page.gallery limit:3 %}
+        <div class="slider-item bg-image-style aspect-portrait border"
+            style="background-image: url('{{ item.image_path }}');"></div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- README: To create the video used in this project, I used the following ffmpeg command to crop and optimize the original video for web use. Make sure to replace [relative-path] with the path to your original video and [new-name] with the desired name for the output video.
 ffmpeg -i [relative-path] -vf "crop=680:ih:600:0,format=yuv420p" -c:v libx264 -crf 17 -an -preset slow uploads/projects/[new-name].mp4 
 -->

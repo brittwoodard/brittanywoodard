@@ -690,6 +690,12 @@ li:last-child {
 .m-2 {
   margin: 0.5rem;
 }
+.m-8 {
+  margin: 2rem;
+}
+.m-20 {
+  margin: 5rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -797,6 +803,12 @@ li:last-child {
 .h-screen {
   height: 100vh;
 }
+.h-\[60vh\] {
+  height: 60vh;
+}
+.h-\[40vh\] {
+  height: 40vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -836,6 +848,9 @@ li:last-child {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -862,6 +877,12 @@ li:last-child {
 }
 .gap-16 {
   gap: 4rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-20 {
+  gap: 5rem;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -913,6 +934,10 @@ li:last-child {
 .border-x-light {
   --tw-border-opacity: 1;
   border-color: rgb(249 248 243 / var(--tw-border-opacity));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-x-dark {
   --tw-border-opacity: 1;
@@ -990,11 +1015,21 @@ li:last-child {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pt-5p {
+  padding-top: 5%;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .text-left {
   text-align: left;
@@ -1145,6 +1180,19 @@ li:last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+  .md\:sticky {
+    position: sticky;
+  }
+  .md\:top-0 {
+    top: 0px;
+  }
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1160,6 +1208,9 @@ li:last-child {
   .md\:mt-0 {
     margin-top: 0px;
   }
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
   .md\:block {
     display: block;
   }
@@ -1168,6 +1219,12 @@ li:last-child {
   }
   .md\:grid {
     display: grid;
+  }
+  .md\:hidden {
+    display: none;
+  }
+  .md\:h-screen {
+    height: 100vh;
   }
   .md\:max-h-\[40vh\] {
     max-height: 40vh;
@@ -1196,6 +1253,9 @@ li:last-child {
   .md\:w-\[80\%\] {
     width: 80%;
   }
+  .md\:w-full {
+    width: 100%;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1207,6 +1267,9 @@ li:last-child {
   }
   .md\:gap-8 {
     gap: 2rem;
+  }
+  .md\:overflow-hidden {
+    overflow: hidden;
   }
   .md\:border-r {
     border-right-width: 1px;
@@ -1277,6 +1340,9 @@ li:last-child {
   }
   .lg\:gap-12 {
     gap: 3rem;
+  }
+  .lg\:gap-20 {
+    gap: 5rem;
   }
   .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-x-reverse: 0;

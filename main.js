@@ -22,6 +22,20 @@ $('.testimonial-container').slick({
     pauseOnHover: true,
 });
 
+
+$('.slider-container').slick({
+	autoplay: true, 
+	autoplaySpeed: 900, 
+	speed: 500, 
+	arrows: false, 
+	accessibility: true, 
+	dots: false, 
+	fade: true, 
+	infinite: true, 
+	pauseOnHover: false, 
+});
+
+
 // Animate on Scroll
 AOS.init ({
 });
