@@ -2,12 +2,58 @@
 layout: default
 ---
 
-<section class="grid grid-cols-2">
-    <div class="hidden md:block relative min-h-[40h] lg:aspect-square overflow-hidden">
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="/uploads/projects/laptop-manamei.mp4" type="video/mp4">
-            <source src="" type="video/webm">
-            <p>Sorry, your browser doesn't support embedded videos.</p>
+<section class="md:grid md:grid-cols-2">
+
+    <!-- Left Column -->
+    <div class="relative md:sticky top-0 h-[60vh] md:h-screen w-full overflow-hidden">
+        <video autoplay loop muted playsinline class="absolute inset-0 h-full w-full object-cover">
+            <source src="{{ page.video.video_path_mp4 }}" type="video/mp4">
+            <source src="{{ page.video.video_path_webm }}" type="video/webm">
+            This browser isn’t quite ready for the full experience and doesn't support this video format.
         </video>
     </div>
+
+    <!-- Right Column -->
+    <div class="md:mt-20 pt-20 px-8 lg:p-20">
+        <div>
+            <h1 class="heading">{{ page.title }}</h1>
+            <div>
+                <h2 class="uppercase mt-8 mb-2">The Vision</h2>
+                <div>
+                    {{ page.vision | markdownify }}
+                </div>
+                <h2 class="uppercase mt-12 mb-4">The Strategy</h2>
+                <div>
+                    {{ page.strategy | markdownify }}
+                </div>
+                
+                <h2 class="uppercase mt-12 mb-4">The Outcome</h2>
+                <div>
+                    {{ page.outcome | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<section class="hidden md:block py-20">
+    <div class="grid grid-cols-3 gap-8 lg:gap-20">
+        {% for item in page.gallery limit:3 %}
+        <div class="bg-image-style aspect-portrait border"
+            style="background-image: url('{{ item.image_path }}');"></div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="md:hidden my-8 md:my-20 mx-8">
+    <div class="slider-container">
+        {% for item in page.gallery limit:3 %}
+        <div class="slider-item bg-image-style aspect-portrait border"
+            style="background-image: url('{{ item.image_path }}');"></div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- README: To create the video used in this project, I used the following ffmpeg command to crop and optimize the original video for web use. Make sure to replace [relative-path] with the path to your original video and [new-name] with the desired name for the output video.
+ffmpeg -i [relative-path] -vf "crop=680:ih:600:0,format=yuv420p" -c:v libx264 -crf 17 -an -preset slow uploads/projects/[new-name].mp4 
+-->
