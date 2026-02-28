@@ -125,6 +125,31 @@ cta:
   </div>
 </section>
 
+<section id="portfolio" class="bg-dark text-x-light py-20 px-8 lg:px-20">
+  <div class="text-center mb-12">
+    <h2 class="heading mb-2">A look at the <em>vision in action</em></h2>
+    <p>Explore the digital spaces I’ve built for leaders who prioritize both high-end design and high-functioning systems.</p>
+  </div>
+
+  <div class="portfolio-container">
+    {% for item in site.projects %}
+    <div class="text-center mb-12 last:mb-0 md:mb-0 group"> 
+      
+      <div class="relative aspect-portrait overflow-hidden">  
+        <div class="bg-image-style absolute inset-0" style="background-image: url('{{ item.hover_image }}')"></div>
+        <div class="bg-image-style absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-0" style="background-image: url('{{ item.featured_image }}'); background-position: {{ item.image_focus }};"></div>
+      </div>
+
+      <div>
+        <h3 class="uppercase mt-8">{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <a href="{{ item.url }}" class="pb-2 border-b border-x-light hover:border-feature hover:text-feature hover:transition hover:duration-500">Explore</a>
+      </div>
+
+    </div> {% endfor %}
+  </div>
+</section>
+
 <!-- Includes -->
 {% include section-includes.html %}
 
