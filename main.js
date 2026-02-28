@@ -37,11 +37,16 @@ $('.slider-container').slick({
 
 // Portfolio Slider
  $('.portfolio-container').slick({
+  autoplay: true, 
+  autoplaySpeed: 2000, 
+  speed: 1000, 
+  accessibility: true, 
+  pauseOnHover: false, 
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-  arrows: true, // Set to true if you want navigation arrows
+  arrows: true, 
   responsive: [
     {
       breakpoint: 1024,
