@@ -4,9 +4,9 @@ header:
   - title: About
     url: /about  
   - title: Services
-    url: /services
+    url: /index.html#services
   - title: Portfolio
-    url: /portfolio
+    url: /website-strategy-build#portfolio
   - title: Contact
     url: /contact
   - title: Get Started
@@ -19,4 +19,4 @@ footer:
   - title: Website Strategy + Build
     url: /website-strategy-build
   - title: Portfolio
-    url: /portfolio
+    url: /website-strategy-build#portfolio

@@ -1,66 +1,27 @@
 ---
 layout: default
-title: Contact | Gentle Within
-description: Get in touch to ask questions or book a free consultation. I’ll follow up within 1–2 business days.
-image: /uploads/gentle-within-4.jpg
-heading_html: <em>Contact</em> Me
-description_html: |
-  <p>If you’re interested in therapy services, have questions about how I work, or want to learn more about my offerings, I’d love to hear from you. Please complete the form below and I’ll get back to you within 1–2 business days.</p>
-  <p>Whether you’re ready to begin or just exploring, reaching out is the first step.</p>
-image:
-  image_path: /uploads/gentle-within-4.jpg
-  image_focus:
+title: Contact
+description: Get in touch to learn how I can help you build a website that works for your
+hero:
+  image_path: /uploads/brittanywoodard-9.jpg
+  image_focus: left
+  subtitle: You’re the visionary. I help make the vision run.
+  title_html: Business <em>systems</em> and <em>automation</em> for wellness leaders who’ve outgrown manual systems.
+  description: Leads get captured, follow-up happens automatically, and growth doesn’t come with more admin.
+  cta: 
+    url: #
+    text: Get Started
 seo:
-  title: Contact | Gentle Within
-  description: Get in touch to ask questions or book a free consultation. I’ll follow up within 1–2 business days.
-  social_image: /uploads/gentle-within-4.jpg
+  title: Contact Brittany Woodard
+  description: Get in touch to learn how I can help you build a website that works for your wellness business.
+  social_image: /uploads/contact-social-image.jpg
+  keywords:
+    - contact
+    - get in touch
+    - website systems
+    - website automation
+    - wellness business
   hide-from-google: true
 ---
 
-<section class="grid md:grid-cols-2 md:gap-20 section-padding bg-light">
-
-    <!-- Left Column / Image -->
-    <div class="flex lg:block items-center w-full min-h-[65vh]">
-        <div class="bg-image-style h-[50vh] md:max-h-[40vh] lg:min-h-[100%] w-full rounded-t-[50%] mb-12 md:mb-0" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000"
-            style="background-image: url('{{ page.image.image_path }}'); background-position: {{ page.image.image_focus }};">
-        </div>
-    </div>
-
-
-    <!-- Right Column / Text -->
-    <div class="flex flex-col justify-center items-start" data-aos="fade" data-aos-offset="0" data-aos-duration="3000">
-        <div>
-            <h1 class="font-serif text-3xl text-dark mb-4">{{ page.heading_html }}</h1>
-            <div>
-                {{ page.description_html }}
-            </div>
-        </div>
-
-        <!-- Contact Button -->
-        <button id="openContact" class="button">
-            Contact Me
-        </button>
-    </div>
-
-    <!-- Modal (only on this page) -->
-        <div id="contactModal" class="fixed inset-0 bg-black/60 flex items-center justify-center hidden z-50">
-        <div class="relative bg-white w-11/12 md:w-3/4 lg:w-1/2 h-[80vh] rounded-none shadow-lg overflow-hidden">
-            <button id="closeContact" class="absolute top-[2%] right-[3%] text-feature hover:text-dark text-[1.5rem]">
-            ✕
-            </button>
-            <iframe src="https://amy-b-pichardo.clientsecure.me/contact-widget" class="w-full h-full border-0"></iframe>
-        </div>
-        </div>
-
-        <script>
-        const openBtn = document.getElementById('openContact');
-        const closeBtn = document.getElementById('closeContact');
-        const modal = document.getElementById('contactModal');
-
-        openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
-        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
-        modal.addEventListener('click', e => {
-            if (e.target === modal) modal.classList.add('hidden');
-        });
-        </script>
-</section>
+{% include section-hero-img-left.html %}

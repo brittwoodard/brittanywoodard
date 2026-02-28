@@ -1,11 +1,11 @@
-<footer class="bg-light text-x-dark py-8 px-8 lg:px-20 grid grid-cols-3">
+<footer class="bg-light text-x-dark py-8 px-8 lg:px-20 md:grid md:grid-cols-3">
     <div>
         {% for item in site.data.navigation.footer %}
         <a href="{{ item.url }}" class="uppercase block">{{ item.title }}</a>
         {% endfor %}
     </div>
     <div class="flex flex-col justify-center">
-        <p class="font-posture text-[1.75rem] text-center">brittany woodard</p>
+        <a href="/index.html" class="font-posture text-[1.75rem] text-center py-12 md:py-0 lowercase">Brittany Woodard</a>
     </div>
     <div class="text-right">
         <a href="/contact" class="uppercase block">Contact</a>

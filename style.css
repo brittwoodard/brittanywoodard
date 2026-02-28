@@ -29,8 +29,8 @@
         @apply text-feature transition duration-500
     }
 
-    footer nav a {
-        @apply font-serif text-dark
+    footer a {
+        @apply text-dark hover:text-feature hover:transition hover:duration-500
     }
 
     h1 {
