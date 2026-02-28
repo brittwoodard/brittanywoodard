@@ -2,25 +2,21 @@ header:
   - title: Home
     url: /index
   - title: About
-    url: /index#about  
+    url: /about  
   - title: Services
-    url: /index#services
+    url: /services
+  - title: Portfolio
+    url: /portfolio
   - title: Contact
     url: /contact
-  - title: Book a Discovery Call
+  - title: Get Started
     url: /discover
 footer:
-  pages: 
-   - title: About
-     url: /index#about  
-   - title: Contact
-     url: /contact
-   - title: Book a Discovery Call
-     url: /discover
-  services: 
-   - title: Psychotherapy
-     url: /psychotherapy
-   - title: Ayurvedic Consultations
-     url: /ayurvedic-consultations
-   - title: Organizational Consulting
-     url: /organizational-consulting
+  - title: The Whole Package
+    url: /website-systems-setup
+  - title: Your Systems Partner
+    url: /website-systems-retainer  
+  - title: Website Strategy + Build
+    url: /website-strategy-build
+  - title: Portfolio
+    url: /portfolio

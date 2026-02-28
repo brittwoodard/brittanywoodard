@@ -1,15 +1,15 @@
 <header
-    class="flex flex-col justify-items-stretch z-20 absolute top-0 w-full py-4">
-    <nav class="hidden sm:hidden md:flex justify-between">
-        <div>
-            {% for item in site.data.site-settings.navigation limit:2 %}
-            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+    class="z-20 absolute top-0 w-full py-4 border-b border-dark">
+    <nav class="hidden sm:hidden md:grid grid-cols-7 items-center">
+        <div class="col-span-3 flex justify-around">
+            {% for item in site.data.navigation.header limit:3 %}
+            <a href="{{item.url}}" class="uppercase">{{item.title}}</a>
             {% endfor %}
         </div>
         <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer" href="/index.html">Brittany Woodard</a>
-        <div">
-            {% for item in site.data.site-settings.navigation limit:2 offset:2 %}
-            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
+        <div class="col-span-3 flex justify-around">
+            {% for item in site.data.navigation.header limit:3 offset:3 %}
+            <a href="{{item.url}}" class="uppercase">{{item.title}}</a>
             {% endfor %}
         </div>
     </nav>
