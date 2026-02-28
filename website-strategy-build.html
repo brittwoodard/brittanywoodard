@@ -107,12 +107,12 @@ cta:
   </div>
 
   <div class="md:grid md:grid-cols-3 md:gap-8 lg:gap-12">
-    {% for item in page.portfolio %}
+    {% for item in site.projects %}
     <div class="text-center mb-12 last:mb-0 md:mb-0 group"> 
       
       <div class="relative aspect-portrait overflow-hidden">  
         <div class="bg-image-style absolute inset-0" style="background-image: url('{{ item.hover_image }}')"></div>
-        <div class="bg-image-style absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-0" style="background-image: url('{{ item.featured_image }}')"></div>
+        <div class="bg-image-style absolute inset-0 transition-opacity duration-700 ease-in-out group-hover:opacity-0" style="background-image: url('{{ item.featured_image }}'); background-position: {{ item.image_focus }};"></div>
       </div>
 
       <div>
