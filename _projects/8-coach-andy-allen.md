@@ -3,10 +3,11 @@ layout: project
 video: 
   video_path_mp4: /uploads/projects/wbw/website-demo.mp4
   video_path_webm: /uploads/projects/wbw/website-demo.webm
-title: Whole Body Wellness
+title: Coach Andy Allen
 description: This is a description
-featured_image: /uploads/projects/wbw/wbw-laptop.png
-hover_image: /uploads/projects/wbw/wbw-mobile.jpg
+featured_image: /uploads/projects/coach-andy-allen/coach-andy-allen-mobile.png
+image_focus: 
+hover_image: /uploads/projects/coach-andy-allen/coach-andy-allen-laptop-alt.png
 vision: |
   This project served as a comprehensive exploration in architecting a high-performance "Digital Headquarters." The objective was to design a versatile sanctuary for a multidimensional wellness brand—one that requires a seamless integration of e-commerce, live education, and private membership under one virtual roof.
 

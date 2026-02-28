@@ -5,7 +5,7 @@ video:
   video_path_webm: /uploads/projects/ayurvedic-internship/website-demo.webm
 title: Ayurvedic Internship
 description: This is a description
-featured_image: /uploads/projects/ayurvedic-internship/ayurvedic-internship-laptop-alt.png
+featured_image: /uploads/projects/ayurvedic-internship/ayurvedic-internship-laptop-alt-2.png
 image_focus: bottom
 hover_image: /uploads/projects/ayurvedic-internship/ayurvedic-internship-tablet-alt.png
 vision: |
