@@ -787,6 +787,9 @@ li:last-child {
 .h-full {
   height: 100%;
 }
+.h-\[80vh\] {
+  height: 80vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
