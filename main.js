@@ -41,7 +41,7 @@ $('.slider-container').slick({
   autoplaySpeed: 2000, 
   speed: 1000, 
   accessibility: true, 
-  pauseOnHover: true, 
+  pauseOnHover: false, 
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,

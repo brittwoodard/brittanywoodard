@@ -8,19 +8,13 @@ description: This is a description
 featured_image: /uploads/projects/manamei/mana-mei-tablet.jpg
 hover_image: /uploads/projects/manamei/mana-mei-mobile-alt.png
 vision: |
-  This project served as a comprehensive exploration in architecting a high-performance "Digital Headquarters." The objective was to design a versatile sanctuary for a multidimensional wellness brand—one that requires a seamless integration of e-commerce, live education, and private membership under one virtual roof.
-
-  The focus was on solving the "fragmentation" problem, how to guide a user from a free educational insight to a paid digital product, and finally into a secure, high-value member’s area, without ever losing the brand’s serene, feminine aesthetic.
+  Mana Mei was battling a fragmented digital presence: three separate sites, a maze of Teachable sales pages, and scattered communities on Facebook. While her existing website was aesthetic, it lacked functional strategy, making it difficult to read and costing her conversions. Her vision was a single, high-performance digital home that consolidated all offerings without sacrificing her premium branding or disrupting her current, necessary backend automations.
 strategy: |
-  I engineered this system as a masterclass in "all-in-one" digital infrastructure. I developed a custom e-commerce shop for digital products alongside a password-protected, bespoke member’s portal for exclusive course access.
-
-  To ensure the platform could serve as a true authority hub, I built an advanced, searchable resource archive designed to keep years of content evergreen and discoverable. Every "Distinct Space" in this framework was custom-coded to prove that a high-tech backend (handling payments and community access) can still feel light, modern, and effortless for the end user.
+  To protect her brand's essence and avoid jarring her current community, I developed a custom-coded site that prioritized both a premium aesthetic and lightning-fast responsiveness across all devices. We began by optimizing her existing email infrastructure, upgrading embedded forms for better conversion rates. Finally, we executed a phased migration, moving her entire business—from checkout pages and payments to her course hub and community—onto one robust, centralized CRM.
 outcome: |
-  The result is a blueprint for a digital asset that does the work of an entire administrative team. By centralizing courses, ebooks, and community into one fluid ecosystem, this framework eliminates the technical bottlenecks that often stall scaling brands.
-
-  This project stands as a testament to what is possible when strategy meets clean code. It demonstrates a fully integrated digital business—one that prioritizes a premium user journey while quietly automating the revenue and delivery of a wellness empire.
+  The result is a sophisticated digital sanctuary that eliminated the navigation friction costing her conversions. By automating the manual admin that previously plagued her DMs, the new system now manages everything from enrollment to community access autonomously. Mana finally has a high-performance system that supports her growth, allowing her to focus entirely on leading her community.
 gallery: 
-  - image_path: /uploads/projects/wbw/wbw-mobile.jpg
-  - image_path: /uploads/projects/wbw/wbw-tablet-alt.jpg
-  - image_path: /uploads/projects/wbw/wbw-laptop.png
+  - image_path: /uploads/projects/manamei/mana-mei-mobile.jpg
+  - image_path: /uploads/projects/manamei/mana-mei-tablet.jpg
+  - image_path: /uploads/projects/manamei/mana-mei-laptop-alt.jpg
 ---
