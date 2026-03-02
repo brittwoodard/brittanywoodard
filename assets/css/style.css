@@ -656,6 +656,23 @@ li:last-child {
         color: var(--feature);
     }
 /* Slick */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.visible {
+  visibility: visible;
+}
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -766,8 +783,17 @@ li:last-child {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
 }
 .grid {
   display: grid;
@@ -807,6 +833,9 @@ li:last-child {
 }
 .grow {
   flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
@@ -976,6 +1005,9 @@ li:last-child {
 .pt-20 {
   padding-top: 5rem;
 }
+.pt-16 {
+  padding-top: 4rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1014,6 +1046,9 @@ li:last-child {
 .italic {
   font-style: italic;
 }
+.leading-snug {
+  line-height: 1.375;
+}
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1028,6 +1063,9 @@ li:last-child {
 .text-x-light {
   --tw-text-opacity: 1;
   color: rgb(249 248 243 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .transition-opacity {
   transition-property: opacity;

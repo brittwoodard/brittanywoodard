@@ -1,19 +1,16 @@
 ---
 layout: default
-title: Contact
-description: Get in touch to learn how I can help you build a website that works for your
+title: Contact Brittany Woodard
+description: Fill out the form below to get in touch with Brittany Woodard and learn how she can help you build a website that works for your wellness business.
 hero:
   image_path: /uploads/brittanywoodard-9.jpg
   image_focus: left
-  subtitle: You’re the visionary. I help make the vision run.
-  title_html: Business <em>systems</em> and <em>automation</em> for wellness leaders who’ve outgrown manual systems.
-  description: Leads get captured, follow-up happens automatically, and growth doesn’t come with more admin.
-  cta: 
-    url: #
-    text: Get Started
+  subtitle: 
+  title_html: Contact <em>Brittany Woodard</em>
+  description: Fill out the form below to get in touch with Brittany Woodard and learn how she can help you build a website that works for your wellness business.
 seo:
   title: Contact Brittany Woodard
-  description: Get in touch to learn how I can help you build a website that works for your wellness business.
+  description: Fill out the form below to get in touch with Brittany Woodard and learn how she can help you build a website that works for your wellness business.
   social_image: /uploads/contact-social-image.jpg
   keywords:
     - contact
@@ -21,7 +18,21 @@ seo:
     - website systems
     - website automation
     - wellness business
-  hide-from-google: true
+  hide-from-google: false
 ---
 
-{% include section-hero-img-left.html %}
+<section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+
+  <!-- Left Column -->
+  <div class="bg-image-style" style="background-image: url('{{ page.hero.image_path }}'); background-position: {{ page.hero.image_focus }};"></div>
+
+  <!-- Right Column -->
+  <div class="p-8 lg:p-20 h-[100vh] flex items-center">
+    <div>
+      <h1 class="pt-20 mb-4">{{ page.hero.title_html }}</h1>
+      <p>{{ page.hero.description }}</p>
+      {% include form-contact.html %}
+    </div>
+  </div>
+
+</section>

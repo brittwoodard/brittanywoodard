@@ -5,7 +5,7 @@ general:
   logo-max-width: 
   logo-text: 
 seo:
-  site_name:
+  site_name: Brittany Woodard
   title:
   type: website
   description:
@@ -15,12 +15,12 @@ social:
   instagram_username: 
   facebook_username:
   pinterest_username:
-  linkedin_username: 
+  linkedin_username: brittany-woodard-082a8657
   twitter_username:
   tiktok_username:
   youtube_username:
 brand:
-  primary_logo_path: "/uploads/gentle-within-17.png"
+  primary_logo_path: 
   secondary_logo_path:
   submark_logo_path:
 technical:
