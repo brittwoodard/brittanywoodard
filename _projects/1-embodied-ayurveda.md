@@ -8,19 +8,13 @@ description: This is a description
 featured_image: /uploads/projects/embodied-ayurveda/embodied-ayurveda-laptop.png
 hover_image: /uploads/projects/embodied-ayurveda/embodied-ayurveda-tablet-alt.png
 vision: |
-  This project served as a comprehensive exploration in architecting a high-performance "Digital Headquarters." The objective was to design a versatile sanctuary for a multidimensional wellness brand—one that requires a seamless integration of e-commerce, live education, and private membership under one virtual roof.
-
-  The focus was on solving the "fragmentation" problem, how to guide a user from a free educational insight to a paid digital product, and finally into a secure, high-value member’s area, without ever losing the brand’s serene, feminine aesthetic.
+  The founder of Embodied Ayurveda needed to bridge the gap between inspiration and enrollment. Her vision was a mindful, sanctuary-like website that reflects her brand’s essence while acting as a proactive assistant. The objective was to create a smooth experience where a visitor moves from feeling inspired to becoming a captured lead in a single, fluid journey.
 strategy: |
-  I engineered this system as a masterclass in "all-in-one" digital infrastructure. I developed a custom e-commerce shop for digital products alongside a password-protected, bespoke member’s portal for exclusive course access.
-
-  To ensure the platform could serve as a true authority hub, I built an advanced, searchable resource archive designed to keep years of content evergreen and discoverable. Every "Distinct Space" in this framework was custom-coded to prove that a high-tech backend (handling payments and community access) can still feel light, modern, and effortless for the end user.
+  To create an intentional journey, I adopted a "less is more" strategy, designing a minimal site structure. I  integrated her CRM beautifully into the website, for a premium experience. The architecture focuses entirely on conversion, capturing high-quality leads by encouraging visitors to download a custom-designed brochure that leads directly to a sales call.
 outcome: |
-  The result is a blueprint for a digital asset that does the work of an entire administrative team. By centralizing courses, ebooks, and community into one fluid ecosystem, this framework eliminates the technical bottlenecks that often stall scaling brands.
-
-  This project stands as a testament to what is possible when strategy meets clean code. It demonstrates a fully integrated digital business—one that prioritizes a premium user journey while quietly automating the revenue and delivery of a wellness empire.
+  The result is a streamlined website that bridges the gap between inspiration and action. By establishing a minimal structure focused on targeted, high-value brochure downloads, Embodied Ayurveda now converts passive browsers into high-quality leads. The founder can now focus on leading experiences rather than managing manual technical admin.
 gallery: 
-  - image_path: /uploads/projects/wbw/wbw-mobile.jpg
-  - image_path: /uploads/projects/wbw/wbw-tablet-alt.jpg
-  - image_path: /uploads/projects/wbw/wbw-laptop.png
+  - image_path: /uploads/projects/embodied-ayurveda/embodied-ayurveda-mobile.png
+  - image_path: /uploads/projects/embodied-ayurveda/embodied-ayurveda-tablet.png
+  - image_path: /uploads/projects/embodied-ayurveda/embodied-ayurveda-laptop.png
 ---
