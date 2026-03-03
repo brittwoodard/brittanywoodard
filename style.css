@@ -10,6 +10,9 @@
     --main: #ABA785;
     --light: #F0EEE1;
     --x-light: #f9f8f3;
+    --sans: 'europa', 'sans-serif';
+    --serif: 'ivyjournal', 'serif';
+    --posture: 'postureregular', 'serif';
 }
 
 
