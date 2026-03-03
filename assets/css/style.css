@@ -1017,6 +1017,9 @@ li:last-child {
 .font-serif {
   font-family: ivyjournal, serif;
 }
+.font-sans {
+  font-family: europa, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1216,6 +1219,9 @@ li:last-child {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
   .md\:text-left {
     text-align: left;
