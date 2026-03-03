@@ -1,0 +1,306 @@
+<style type="text/css">
+  @import url("https://assets.mlcdn.com/fonts.css?version=1772539");
+
+  #mlb2-37932178.ml-form-embedContainer {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    width: 100% !important;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+
+  #mlb2-37932178 .ml-form-embedWrapper {
+    background-color: #f9f8f3;
+    padding: 20px;
+  }
+
+  /* 1. HIDE THE ACTUAL BROWSER INPUT COMPLETELY */
+  #mlb2-37932178 .custom-control-input {
+    position: absolute !important;
+    opacity: 0 !important;
+    z-index: -1 !important;
+  }
+
+  /* 2. STYLE THE LABEL & FAKE BOX */
+  #mlb2-37932178 .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 2rem; /* Space for the box */
+    margin-bottom: 12px;
+  }
+
+  #mlb2-37932178 .custom-control-label {
+    cursor: pointer;
+    font-size: 16px !important;
+    line-height: 24px;
+    display: inline-block;
+    color: #423B24;
+  }
+
+  /* 3. DRAW THE CUSTOM BOX (Ensuring only ONE exists) */
+  #mlb2-37932178 .custom-control-label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #423B24 !important;
+    pointer-events: none;
+  }
+
+  #mlb2-37932178 .custom-radio .custom-control-label::before {
+    border-radius: 50% !important;
+  }
+
+  #mlb2-37932178 .custom-checkbox .custom-control-label::before {
+    border-radius: 2px !important;
+  }
+
+  /* 4. CHECKED STATE */
+  #mlb2-37932178 .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #BF947A !important;
+    border-color: #BF947A !important;
+  }
+
+  /* 5. THE TICK / DOT ICON */
+  #mlb2-37932178 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/70% 70% url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  #mlb2-37932178 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  /* Clean up standard inputs */
+  #mlb2-37932178 .form-control {
+    background-color: #f9f8f3 !important;
+    border: 1px solid #423B24 !important;
+    padding: 12px !important;
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  #mlb2-37932178 .form-label {
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 8px 0;
+  }
+</style>
+
+
+<div id="mlb2-37932178" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-37932178">
+  <div class="ml-form-align-center ">
+    <div class="ml-form-embedWrapper embedForm">
+      <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+
+        <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2157473/forms/180929175661577344/subscribe" method="post" target="_blank">
+          <div class="ml-form-formContent">
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-name">
+                <label class="form-label">First Name</label>
+                <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-last_name">
+                <label class="form-label">Last Name</label>
+                <input aria-label="last_name" type="text" class="form-control" name="fields[last_name]" placeholder="Last name">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <label class="form-label">Email Address</label>
+                <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-business_name ml-validate-required">
+                <label class="form-label">Business Name</label>
+                <input aria-label="business_name" aria-required="true" type="text" class="form-control" name="fields[business_name]" placeholder="Business Name">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-website_url ml-validate-required">
+                <label class="form-label">Website URL</label>
+                <input aria-label="website_url" aria-required="true" type="text" class="form-control" name="fields[website_url]" placeholder="Website URL">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-problem ml-validate-required">
+                <label class="form-label">What is the biggest challenge you're facing?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[problem][]" class="custom-control-input" type="checkbox" value="I have a growing brand, but my backend is &quot;all over the place&quot; and I’m overwhelmed." id="prob-0">
+                    <label class="custom-control-label" for="prob-0">I have a growing brand, but my backend is "all over the place" and I’m overwhelmed.</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[problem][]" class="custom-control-input" type="checkbox" value="My systems are mostly set up, but I need an expert partner to handle the ongoing tech/updates." id="prob-1">
+                    <label class="custom-control-label" for="prob-1">My systems are mostly set up, but I need an expert partner to handle the ongoing tech/updates.</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[problem][]" class="custom-control-input" type="checkbox" value="My website feels like a digital business card and isn't actually capturing leads" id="prob-2">
+                    <label class="custom-control-label" for="prob-2">My website feels like a digital business card and isn't actually capturing leads.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-problem_other">
+                <label class="form-label">Other Challenge</label>
+                <input aria-label="problem_other" type="text" class="form-control" name="fields[problem_other]" placeholder="Please specify...">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-service ml-validate-required">
+                <label class="form-label">Which service are you interested in?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[service][]" class="custom-control-input" type="checkbox" value="Your Systems Partner (Monthly Retainer - starts at €400/mo)" id="serv-0">
+                    <label class="custom-control-label" for="serv-0">Your Systems Partner (€400/mo+)</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[service][]" class="custom-control-input" type="checkbox" value="The Whole Package (Complete Deep Clean/Setup - €1,500 to €7,500)" id="serv-1">
+                    <label class="custom-control-label" for="serv-1">The Whole Package (€1,500 - €7,500)</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[service][]" class="custom-control-input" type="checkbox" value="Website Strategy + Build (Custom Build - starts at €3,000)" id="serv-2">
+                    <label class="custom-control-label" for="serv-2">Website Strategy + Build (€3,000+)</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input name="fields[service][]" class="custom-control-input" type="checkbox" value="I'm not sure yet, I need your recommendation." id="serv-3">
+                    <label class="custom-control-label" for="serv-3">I'm not sure yet, I need your recommendation.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-website_platform ml-validate-required">
+                <label class="form-label">What platform is your website on?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Wix" id="web-0"><label class="custom-control-label" for="web-0">Wix</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Wordpress" id="web-1"><label class="custom-control-label" for="web-1">Wordpress</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Squarespace" id="web-2"><label class="custom-control-label" for="web-2">Squarespace</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Custom Coded" id="web-3"><label class="custom-control-label" for="web-3">Custom Coded</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Kajabi" id="web-4"><label class="custom-control-label" for="web-4">Kajabi</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Teachable" id="web-5"><label class="custom-control-label" for="web-5">Teachable</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[website_platform][]" class="custom-control-input" type="checkbox" value="Other" id="web-6"><label class="custom-control-label" for="web-6">Other</label></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-website_other">
+                <input aria-label="website_other" type="text" class="form-control" name="fields[website_other]" placeholder="If other, please list...">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-email_platform ml-validate-required">
+                <label class="form-label">What email platform do you use?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-radio"><input name="fields[email_platform]" class="custom-control-input" type="radio" value="Mailchimp" id="email-0"><label class="custom-control-label" for="email-0">Mailchimp</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[email_platform]" class="custom-control-input" type="radio" value="ConvertKit" id="email-1"><label class="custom-control-label" for="email-1">ConvertKit</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[email_platform]" class="custom-control-input" type="radio" value="Klaviyo" id="email-2"><label class="custom-control-label" for="email-2">Klaviyo</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[email_platform]" class="custom-control-input" type="radio" value="Other" id="email-3"><label class="custom-control-label" for="email-3">Other</label></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-email_other">
+                <input aria-label="email_other" type="text" class="form-control" name="fields[email_other]" placeholder="If other email tool...">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-crm ml-validate-required">
+                <label class="form-label">Which CRM are you using?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-radio"><input name="fields[crm]" class="custom-control-input" type="radio" value="Ontraport" id="crm-0"><label class="custom-control-label" for="crm-0">Ontraport</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[crm]" class="custom-control-input" type="radio" value="GoHighLevel" id="crm-1"><label class="custom-control-label" for="crm-1">GoHighLevel</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[crm]" class="custom-control-input" type="radio" value="HubSpot" id="crm-2"><label class="custom-control-label" for="crm-2">HubSpot</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[crm]" class="custom-control-input" type="radio" value="I don't have a CRM" id="crm-3"><label class="custom-control-label" for="crm-3">I don't have a CRM</label></div>
+                  <div class="custom-control custom-radio"><input name="fields[crm]" class="custom-control-input" type="radio" value="Other" id="crm-4"><label class="custom-control-label" for="crm-4">Other</label></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-crm_other">
+                <input aria-label="crm_other" type="text" class="form-control" name="fields[crm_other]" placeholder="If other CRM...">
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-marketing_channels ml-validate-required">
+                <label class="form-label">Which marketing channels are you active on?</label>
+                <div class="custom-checkbox-radio-list">
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Email" id="mkt-0"><label class="custom-control-label" for="mkt-0">Email</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Organic Social" id="mkt-1"><label class="custom-control-label" for="mkt-1">Organic Social</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Paid Social" id="mkt-2"><label class="custom-control-label" for="mkt-2">Paid Social</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Organic Search" id="mkt-3"><label class="custom-control-label" for="mkt-3">Organic Search</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Paid Search" id="mkt-4"><label class="custom-control-label" for="mkt-4">Paid Search</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Affiliates" id="mkt-5"><label class="custom-control-label" for="mkt-5">Affiliates</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Influencers" id="mkt-6"><label class="custom-control-label" for="mkt-6">Influencers</label></div>
+                  <div class="custom-control custom-checkbox"><input name="fields[marketing_channels][]" class="custom-control-input" type="checkbox" value="Other" id="mkt-7"><label class="custom-control-label" for="mkt-7">Other</label></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ml-form-fieldRow">
+              <div class="ml-field-group ml-field-marketing_other">
+                <input aria-label="marketing_other" type="text" class="form-control" name="fields[marketing_other]" placeholder="Other channels...">
+              </div>
+            </div>
+
+            <div class="ml-form-embedSubmit mt-8">
+              <button type="submit" class="primary button">Submit Inquiry</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+  <script>
+    function ml_webform_success_37932178() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-37932178 .row-success').show();
+      $('.ml-subscribe-form-37932178 .row-form').hide();
+    }
+      </script>
+  
+  
+      <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+        <script>
+            fetch("https://assets.mailerlite.com/jsonp/2157473/forms/180929175661577344/takel")
+        </script>
