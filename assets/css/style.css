@@ -723,6 +723,10 @@ li:last-child {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
