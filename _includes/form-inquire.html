@@ -11,7 +11,7 @@
 
   #mlb2-37932178 .ml-form-embedWrapper {
     background-color: #f9f8f3;
-    padding: 20px;
+    padding: 0;
   }
 
   /* 1. HIDE THE ACTUAL BROWSER INPUT COMPLETELY */
@@ -112,19 +112,21 @@
         <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2157473/forms/180929175661577344/subscribe" method="post" target="_blank">
           <div class="ml-form-formContent">
 
-            <div class="ml-form-fieldRow">
-              <div class="ml-field-group ml-field-name">
-                <label class="form-label">First Name</label>
-                <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="Name">
-              </div>
-            </div>
+            <div class="ml-form-row-flex">
+  <div class="ml-form-fieldRow ml-field-half">
+    <div class="ml-field-group ml-field-name">
+      <label class="form-label">First Name</label>
+      <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="First Name">
+    </div>
+  </div>
 
-            <div class="ml-form-fieldRow">
-              <div class="ml-field-group ml-field-last_name">
-                <label class="form-label">Last Name</label>
-                <input aria-label="last_name" type="text" class="form-control" name="fields[last_name]" placeholder="Last name">
-              </div>
-            </div>
+  <div class="ml-form-fieldRow ml-field-half">
+    <div class="ml-field-group ml-field-last_name">
+      <label class="form-label">Last Name</label>
+      <input aria-label="last_name" type="text" class="form-control" name="fields[last_name]" placeholder="Last name">
+    </div>
+  </div>
+</div>
 
             <div class="ml-form-fieldRow">
               <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
