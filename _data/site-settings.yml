@@ -1,16 +1,16 @@
 general:
-  site-name: 
-  form-email: 
+  site-name: Brittany Woodard
+  form-email: connect@brittanywoodard.com
   logo_path: 
   logo-max-width: 
-  logo-text: 
+  logo-text: Brittany Woodard
 seo:
   site_name: Brittany Woodard
-  title:
+  title: "Systems Strategy & Custom Websites for Wellness Leaders"
   type: website
-  description:
-  keywords:
-  social_image:
+  description: "I build high-performance websites and automated business systems for wellness leaders who have outgrown manual admin."
+  keywords: "business systems, wellness business automation, custom website design, CRM integration, systems strategist"
+  social_image: /uploads/brittanywoodard-7.jpg
 social:
   instagram_username: 
   facebook_username:
