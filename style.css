@@ -80,6 +80,10 @@
         @apply py-2 px-8 bg-light uppercase font-semibold text-feature inline-block border border-feature hover:bg-x-light hover:text-feature hover:duration-500;
     }
 
+    .link {
+        @apply mb-2 border-b border-x-dark hover:text-feature hover:border-feature transition duration-500
+    }
+
     .fa-brands {
         @apply text-xl
     }

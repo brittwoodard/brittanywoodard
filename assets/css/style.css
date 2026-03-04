@@ -572,6 +572,25 @@ li:last-child {
   color: rgb(191 148 122 / var(--tw-text-opacity));
   transition-duration: 500ms;
 }
+.link {
+  margin-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  border-color: rgb(66 59 36 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-left-color: rgb(104 96 73 / var(--tw-border-opacity));
+  border-right-color: rgb(104 96 73 / var(--tw-border-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+.link:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 148 122 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(191 148 122 / var(--tw-text-opacity));
+}
 /* Images */
 .bg-image-style {
   background-size: cover;
@@ -722,13 +741,13 @@ li:last-child {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -889,14 +908,11 @@ li:last-child {
 .justify-items-center {
   justify-items: center;
 }
-.gap-8 {
-  gap: 2rem;
-}
-.gap-4 {
-  gap: 1rem;
-}
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
@@ -909,9 +925,6 @@ li:last-child {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.rounded {
-  border-radius: 0.25rem;
 }
 .rounded-none {
   border-radius: 0px;
@@ -1045,11 +1058,11 @@ li:last-child {
 .font-posture {
   font-family: postureregular, serif;
 }
-.font-serif {
-  font-family: ivyjournal, serif;
-}
 .font-sans {
   font-family: europa, sans-serif;
+}
+.font-serif {
+  font-family: ivyjournal, serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1058,20 +1071,16 @@ li:last-child {
 .text-\[1\.75rem\] {
   font-size: 1.75rem;
 }
+.text-\[1rem\] {
+  font-size: 1rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[1rem\] {
-  font-size: 1rem;
-}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .font-normal {
   font-weight: 400;
@@ -1109,15 +1118,15 @@ li:last-child {
 .outline {
   outline-style: solid;
 }
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1264,14 +1273,11 @@ li:last-child {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .md\:pt-20 {
-    padding-top: 5rem;
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
   .md\:pt-40 {
     padding-top: 10rem;
-  }
-  .md\:pt-24 {
-    padding-top: 6rem;
   }
   .md\:text-left {
     text-align: left;
@@ -1328,9 +1334,6 @@ li:last-child {
   }
   .lg\:p-20 {
     padding: 5rem;
-  }
-  .lg\:p-24 {
-    padding: 6rem;
   }
   .lg\:px-20 {
     padding-left: 5rem;
