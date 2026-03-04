@@ -540,7 +540,6 @@
   }
 
   .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal {
-    width: 30%;
     float: left;
   }
 
@@ -570,30 +569,6 @@
     width: 100%;
     box-sizing: border-box;
     overflow-y: initial;
-  }
-
-  #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-    background-color: #000000 !important;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
-    box-shadow: none;
-    color: #ffffff !important;
-    cursor: pointer;
-    font-family: var(--sans);
-    font-size: 14px !important;
-    font-weight: 700;
-    line-height: 20px;
-    margin: 0 !important;
-    padding: 10px !important;
-    width: 100%;
-    height: auto;
-  }
-
-  #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-    background-color: #333333 !important;
-    border-color: #333333 !important;
   }
 
   #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
@@ -654,29 +629,8 @@
     width: 100%;
   }
 
-  #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-    background-color: #000000 !important;
-    border: none !important;
-    border-radius: 4px !important;
-    box-shadow: none !important;
-    color: #ffffff !important;
-    cursor: pointer;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 700 !important;
-    line-height: 21px !important;
-    height: auto;
-    padding: 10px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
   #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
     display: none;
-  }
-
-  #mlb2-37932178.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-    background-color: #333333 !important;
   }
 
   .ml-subscribe-close {
@@ -726,6 +680,23 @@
   textarea::placeholder {
     opacity: 1;
     color: var(--main);
+  }
+
+  .button {
+    padding: 0.5rem 2rem;
+    background-color: var(--feature);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--x-light);
+    display: block;
+    border: 1px solid var(--feature);
+    transition: background-color 0.5s, color 0.5s;
+    width: 100%
+  }
+
+  .button:hover {
+    background-color: var(--x-light);
+    color: var(--feature);
   }
 
   @media only screen and (max-width: 400px) {
