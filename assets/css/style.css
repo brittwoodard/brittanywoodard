@@ -1120,6 +1120,9 @@ li:last-child {
 .leading-snug {
   line-height: 1.375;
 }
+.leading-\[1em\] {
+  line-height: 1em;
+}
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1305,6 +1308,10 @@ li:last-child {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .md\:pt-24 {
     padding-top: 6rem;

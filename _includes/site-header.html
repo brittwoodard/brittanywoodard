@@ -1,4 +1,4 @@
-<header class="z-20 md:absolute md:top-0 w-full py-4 md:border-b md:border-dark">
+<header class="z-20 md:absolute md:top-0 w-full md:py-4 md:border-b md:border-dark">
 
     <!-- Mobile -->
     <div class="md:hidden mobile-button fixed">
@@ -17,14 +17,14 @@
     <nav class="hidden md:grid grid-cols-7 items-center">
         <div class="col-span-3 flex justify-around">
             {% for item in site.data.navigation.header limit:3 %}
-            <a href="{{item.url}}" class="uppercase">{{item.title}}</a>
+            <a href="{{ item.url }}" class="uppercase">{{item.title}}</a>
             {% endfor %}
         </div>
-        <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer leading-snug"
+        <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer leading-[1em]"
             href="/index.html">Brittany Woodard</a>
         <div class="col-span-3 flex justify-around">
             {% for item in site.data.navigation.header limit:3 offset:3 %}
-            <a href="{{item.url}}" class="uppercase">{{item.title}}</a>
+            <a href="{{ item.url }}" class="uppercase">{{item.title}}</a>
             {% endfor %}
         </div>
     </nav>
