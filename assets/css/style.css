@@ -1053,6 +1053,13 @@ li:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-normal {
   font-weight: 400;
 }
