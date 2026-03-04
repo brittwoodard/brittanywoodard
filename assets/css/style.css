@@ -656,8 +656,22 @@ li:last-child {
         color: var(--feature);
     }
 /* Slick */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .visible {
   visibility: visible;
+}
+.static {
+  position: static;
 }
 .fixed {
   position: fixed;
@@ -711,6 +725,10 @@ li:last-child {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -775,11 +793,17 @@ li:last-child {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
 }
 .table {
   display: table;
+}
+.table-cell {
+  display: table-cell;
 }
 .grid {
   display: grid;
@@ -880,11 +904,11 @@ li:last-child {
 .overflow-hidden {
   overflow: hidden;
 }
-.rounded-none {
-  border-radius: 0px;
-}
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-none {
+  border-radius: 0px;
 }
 .border {
   border-width: 1px;
@@ -1058,6 +1082,9 @@ li:last-child {
 .text-x-light {
   --tw-text-opacity: 1;
   color: rgb(249 248 243 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .outline {
   outline-style: solid;
