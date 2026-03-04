@@ -1042,6 +1042,9 @@ li:last-child {
 .font-serif {
   font-family: ivyjournal, serif;
 }
+.font-sans {
+  font-family: europa, sans-serif;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1059,6 +1062,10 @@ li:last-child {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-normal {
   font-weight: 400;

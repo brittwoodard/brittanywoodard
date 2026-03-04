@@ -784,7 +784,7 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-name">
                 <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]"
-                  placeholder="Name" autocomplete="given-name">
+                  placeholder="First Name" autocomplete="given-name">
               </div>
             </div>
 
@@ -816,13 +816,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-website_url ml-validate-required">
                 <input aria-label="website_url" aria-required="true" type="text" class="form-control" data-inputmask=""
-                  name="fields[website_url]" placeholder="Website_URL" autocomplete="">
+                  name="fields[website_url]" placeholder="Website URL" autocomplete="">
               </div>
             </div>
 
             <!-- Problem -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-problem ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which of these sounds most like you right now?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-checkbox">
@@ -863,13 +865,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-problem_other">
                 <input aria-label="problem_other" type="text" class="form-control" data-inputmask=""
-                  name="fields[problem_other]" placeholder="Problem_Other" autocomplete="">
+                  name="fields[problem_other]" placeholder="If other, please specify here..." autocomplete="">
               </div>
             </div>
 
             <!-- Service -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-service ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which service are you interested in?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-checkbox">
@@ -915,6 +919,8 @@
             <!-- Website Platform -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-website_platform ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which website platform are you using?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-checkbox">
@@ -980,13 +986,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-website_other">
                 <input aria-label="website_other" type="text" class="form-control" data-inputmask=""
-                  name="fields[website_other]" placeholder="Website_Other" autocomplete="">
+                  name="fields[website_other]" placeholder="If other, plese specify here..." autocomplete="">
               </div>
             </div>
 
             <!-- Email Platform -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-email_platform ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which email platform are you using?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-radio">
@@ -1028,13 +1036,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-email_other">
                 <input aria-label="email_other" type="text" class="form-control" data-inputmask=""
-                  name="fields[email_other]" placeholder="Email_Other" autocomplete="">
+                  name="fields[email_other]" placeholder="If other, please specify here..." autocomplete="">
               </div>
             </div>
 
             <!-- CRM -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-crm ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which CRM are you using?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-radio">
@@ -1084,13 +1094,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-crm_other">
                 <input aria-label="crm_other" type="text" class="form-control" data-inputmask=""
-                  name="fields[crm_other]" placeholder="CRM_Other" autocomplete="">
+                  name="fields[crm_other]" placeholder="If other, please specify here..." autocomplete="">
               </div>
             </div>
 
             <!-- Marketing Channels -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-marketing_channels ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Which marketing channels are you using?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-checkbox">
@@ -1164,13 +1176,15 @@
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-marketing_other">
                 <input aria-label="marketing_other" type="text" class="form-control" data-inputmask=""
-                  name="fields[marketing_other]" placeholder="Marketing_Other" autocomplete="">
+                  name="fields[marketing_other]" placeholder="If other, please specify here..." autocomplete="">
               </div>
             </div>
 
             <!-- Investment -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-investment ml-validate-required">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Are you comfortable with the starting investment for the service selected above?</p>
                 <div class="custom-checkbox-radio-list">
 
                   <div class="custom-control custom-radio">
@@ -1203,8 +1217,10 @@
             <!-- Other -->
             <div class="ml-form-fieldRow ">
               <div class="ml-field-group ml-field-other">
+
+                <p class="text-x-dark font-sans text-[1rem] mt-8 mb-2">Is there anything else you’d like to share or any specific questions you have for me?</p>
                 <textarea aria-label="other" class="form-control" name="fields[other]"
-                  placeholder="Is there anything else you’d like to share or any specific questions you have for me?" rows="4"></textarea>
+                  placeholder="Please share here..." rows="4"></textarea>
               </div>
             </div>
 
@@ -1212,7 +1228,7 @@
             <div class="ml-form-fieldRow ml-last-item">
               <div class="ml-field-group ml-field-referral ml-validate-required">
                 <input aria-label="referral" aria-required="true" type="text" class="form-control" data-inputmask=""
-                  name="fields[referral]" placeholder="Referral" autocomplete="">
+                  name="fields[referral]" placeholder="How did you find me?" autocomplete="">
               </div>
             </div>
           </div>
@@ -1225,7 +1241,7 @@
               }
 
               .ml-form-recaptcha.ml-error iframe {
-                border: solid 1px #ff0000;
+                border: solid 1px var(--feature);
               }
 
               @media screen and (max-width: 480px) {
