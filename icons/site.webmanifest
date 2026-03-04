@@ -1,6 +1,6 @@
 {
-  "name": "Brittany Woodard",
-  "short_name": "bw",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/icons/web-app-manifest-192x192.png",
