@@ -23,7 +23,7 @@ seo:
 
 <section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
 
-  <div class="relative w-full h-full">
+  <div class="hidden md:block relative w-full h-full">
     <div class="sticky top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-image-style" 
          style="background-image: url('{{ page.hero.image_path }}'); 
                 background-position: {{ page.hero.image_focus }}; 
@@ -33,7 +33,7 @@ seo:
 
   <div class="p-8 lg:p-20 flex items-center min-h-screen">
     <div class="w-full">
-      <h1 class="md:pt-20 mb-4">{{ page.hero.title_html }}</h1>
+      <h1 class="md:pt-40 lg:pt-24 mb-4">{{ page.hero.title_html }}</h1>
       <p class="mb-6">{{ page.hero.description }}</p>
       {% include form-inquire.html %}
     </div>

@@ -892,6 +892,12 @@ li:last-child {
 .gap-8 {
   gap: 2rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1261,6 +1267,12 @@ li:last-child {
   .md\:pt-20 {
     padding-top: 5rem;
   }
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
   .md\:text-left {
     text-align: left;
   }
@@ -1317,6 +1329,9 @@ li:last-child {
   .lg\:p-20 {
     padding: 5rem;
   }
+  .lg\:p-24 {
+    padding: 6rem;
+  }
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1324,5 +1339,8 @@ li:last-child {
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .lg\:pt-24 {
+    padding-top: 6rem;
   }
 }

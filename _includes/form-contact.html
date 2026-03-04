@@ -718,19 +718,22 @@
           method="post" target="_blank">
           <div class="ml-form-formContent">
 
-            <!-- First Name -->
-            <div class="ml-form-fieldRow ">
-              <div class="ml-field-group ml-field-name ml-validate-required">
-                <input aria-label="name" aria-required="true" type="text" class="form-control" data-inputmask=""
-                  name="fields[name]" placeholder="First Name" autocomplete="given-name">
+            <div class="md:grid md:grid-cols-2 gap-2">
+              
+              <!-- First Name -->
+              <div class="ml-form-fieldRow ">
+                <div class="ml-field-group ml-field-name">
+                  <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]"
+                    placeholder="First Name" autocomplete="given-name">
+                </div>
               </div>
-            </div>
 
-            <!-- Last Name -->
-            <div class="ml-form-fieldRow ">
-              <div class="ml-field-group ml-field-last_name ml-validate-required">
-                <input aria-label="last_name" aria-required="true" type="text" class="form-control" data-inputmask=""
-                  name="fields[last_name]" placeholder="Last name" autocomplete="family-name">
+              <!-- Last Name -->
+              <div class="ml-form-fieldRow ">
+                <div class="ml-field-group ml-field-last_name">
+                  <input aria-label="last_name" type="text" class="form-control" data-inputmask=""
+                    name="fields[last_name]" placeholder="Last name" autocomplete="family-name">
+                </div>
               </div>
             </div>
 
