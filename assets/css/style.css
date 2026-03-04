@@ -618,6 +618,16 @@ li:last-child {
         border-color: var(--dark);
         background-color: var(--dark);
     }
+.mobile-top,
+    .mobile-bottom {
+        position: absolute;
+    }
+.mobile-top {
+        top: -02px;
+    }
+.mobile-bottom {
+        bottom: -02px;
+    }
 .mobile-button.active .mobile-top {
         border-color: var(--feature);
         position: absolute;
@@ -719,11 +729,18 @@ li:last-child {
 .z-20 {
   z-index: 20;
 }
+.z-30 {
+  z-index: 30;
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
 .m-2 {
   margin: 0.5rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -1005,6 +1022,10 @@ li:last-child {
 .p-8 {
   padding: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1104,6 +1125,10 @@ li:last-child {
   --tw-text-opacity: 1;
   color: rgb(104 96 73 / var(--tw-text-opacity));
 }
+.text-feature {
+  --tw-text-opacity: 1;
+  color: rgb(191 148 122 / var(--tw-text-opacity));
+}
 .text-x-dark {
   --tw-text-opacity: 1;
   color: rgb(66 59 36 / var(--tw-text-opacity));
@@ -1183,8 +1208,14 @@ li:last-child {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
   .md\:sticky {
     position: sticky;
+  }
+  .md\:top-0 {
+    top: 0px;
   }
   .md\:my-20 {
     margin-top: 5rem;
