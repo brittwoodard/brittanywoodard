@@ -1,7 +1,7 @@
 <section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
 
   <!-- Left Column -->
-  <div class="bg-image-style" style="background-image: url('{{ page.hero.image_path }}'); background-position: {{ page.hero.image_focus }};"></div>
+  <div class="hidden md:block bg-image-style" style="background-image: url('{{ page.hero.image_path }}'); background-position: {{ page.hero.image_focus }};"></div>
 
   <!-- Right Column -->
   <div class="p-8 lg:p-20 h-[100vh] flex items-center">
@@ -12,5 +12,8 @@
       <a href="{{ site.data.site-settings.cta.url }}" class="button mt-4">{{ page.hero.cta.text }}</a>
     </div>
   </div>
+
+  <!-- Mobile Image -->
+  <div class="md:hidden bg-image-style min-h-[60vh]" style="background-image: url('{{ page.hero.image_path }}'); background-position: {{ page.hero.image_focus }};"></div>
 
 </section>

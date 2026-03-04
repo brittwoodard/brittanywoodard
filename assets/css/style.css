@@ -734,6 +734,9 @@ li:last-child {
 .z-30 {
   z-index: 30;
 }
+.order-last {
+  order: 9999;
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -1221,6 +1224,9 @@ li:last-child {
   }
   .md\:top-0 {
     top: 0px;
+  }
+  .md\:order-first {
+    order: -9999;
   }
   .md\:my-20 {
     margin-top: 5rem;
