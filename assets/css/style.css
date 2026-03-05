@@ -725,20 +725,14 @@ li:last-child {
 .left-0 {
   left: 0px;
 }
-.top-0 {
-  top: 0px;
-}
 .right-2 {
   right: 0.5rem;
 }
+.top-0 {
+  top: 0px;
+}
 .top-2 {
   top: 0.5rem;
-}
-.right-0 {
-  right: 0px;
-}
-.right-\[12px\] {
-  right: 12px;
 }
 .z-20 {
   z-index: 20;
@@ -810,9 +804,6 @@ li:last-child {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
-}
 .ml-8 {
   margin-left: 2rem;
 }
@@ -839,12 +830,6 @@ li:last-child {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.-mt-4 {
-  margin-top: -1rem;
-}
-.-ml-4 {
-  margin-left: -1rem;
 }
 .block {
   display: block;
@@ -1030,6 +1015,9 @@ li:last-child {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1041,15 +1029,6 @@ li:last-child {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-5 {
-  padding: 1.25rem;
-}
-.p-1 {
-  padding: 0.25rem;
-}
-.p-6 {
-  padding: 1.5rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -1120,27 +1099,19 @@ li:last-child {
 .text-\[1rem\] {
   font-size: 1rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-bold {
+  font-weight: 700;
 }
 .font-normal {
   font-weight: 400;
-}
-.font-bold {
-  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1156,9 +1127,6 @@ li:last-child {
 }
 .leading-none {
   line-height: 1;
-}
-.leading-5 {
-  line-height: 1.25rem;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
@@ -1182,9 +1150,6 @@ li:last-child {
 .underline {
   text-decoration-line: underline;
 }
-.opacity-70 {
-  opacity: 0.7;
-}
 .outline {
   outline-style: solid;
 }
@@ -1200,11 +1165,11 @@ li:last-child {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.duration-700 {
-  transition-duration: 700ms;
-}
 .duration-500 {
   transition-duration: 500ms;
+}
+.duration-700 {
+  transition-duration: 700ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1234,11 +1199,6 @@ li:last-child {
 
 .last\:border-b-\[1px\]:last-child {
   border-bottom-width: 1px;
-}
-
-.hover\:border-feature:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 148 122 / var(--tw-border-opacity));
 }
 
 .hover\:text-feature:hover {

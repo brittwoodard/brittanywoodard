@@ -1,23 +1,25 @@
-<div id="cookieConsentBanner" class="p-2 bg-light m-2 md:w-[40%] fixed left-0 bottom-0 z-20">
-    <div class="border border-dark bg-light p-5p relative">
-      <div class="absolute top-2 right-2 cursor-pointer">
-        <span id="close-cookie-banner" class="text-sm font-bold leading-none p-1 block hover:text-feature transition duration-500">✕</span>
-      </div>
-            <div class="text-center">
-                <span>We value your privacy. With your consent, we use cookies to improve this space. They load only after Accept.</span>
-            </div>
-        <div class="flex justify-center mt-4">
-            <a id="acceptCookies" class="button-cookies cursor-pointer link">Accept</a>
-            <a id="declineCookies" class="mx-4 button-cookies cursor-pointer link">Decline</a>
-        </div>
+<div id="cookieConsentBanner" class="p-2 bg-light m-2 md:w-[40%] fixed left-0 bottom-0 z-20 hidden">
+  <div class="border border-dark bg-light p-5p relative">
+    <div class="absolute top-2 right-2 cursor-pointer">
+      <span id="close-cookie-banner"
+        class="text-sm font-bold leading-none p-1 block hover:text-feature transition duration-500">✕</span>
     </div>
+    <div class="text-center">
+      <span>We value your privacy. With your consent, we use cookies to improve this space. They load only after
+        Accept.</span>
+    </div>
+    <div class="flex justify-center mt-4">
+      <a id="acceptCookies" class="button-cookies cursor-pointer link">Accept</a>
+      <a id="declineCookies" class="mx-4 button-cookies cursor-pointer link">Decline</a>
+    </div>
+  </div>
 </div>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MZSNJJTD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'GTM-MZSNJJTD');
@@ -43,7 +45,7 @@
     s.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-MZSNJJTD';
     s.onload = () => {
       window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
+      function gtag() { dataLayer.push(arguments); }
       window.gtag = gtag;
       gtag('js', new Date());
       gtag('config', 'GTM-MZSNJJTD');
