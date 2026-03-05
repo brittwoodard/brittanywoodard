@@ -734,6 +734,12 @@ li:last-child {
 .top-2 {
   top: 0.5rem;
 }
+.right-0 {
+  right: 0px;
+}
+.right-\[12px\] {
+  right: 12px;
+}
 .z-20 {
   z-index: 20;
 }
@@ -1151,6 +1157,9 @@ li:last-child {
 .leading-none {
   line-height: 1;
 }
+.leading-5 {
+  line-height: 1.25rem;
+}
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1172,6 +1181,9 @@ li:last-child {
 }
 .underline {
   text-decoration-line: underline;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .outline {
   outline-style: solid;
