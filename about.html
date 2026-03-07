@@ -1,0 +1,28 @@
+---
+layout: default
+title: About Brittany Woodard
+description: This page is coming soon! In the meantime, if you have questions about working with me, please reach out.
+heading_html: Meet Brittany Woodard, is <em>Coming Soon</em>
+description_html: Thanks for your patience! I’m putting the finishing touches on this page to share a little bit about me and my journey to becoming a business systems strategist. In the meantime, if you have questions about working with me, please reach out.
+links: 
+  link_1: 
+    title: Home
+    url: /index.html
+  link_2: 
+    title: Contact
+    url: /contact.html
+seo:
+  title: 404 - Page Not Found
+  description: The page you are looking for doesn't exist. Navigate back to home or contact Brittany Woodard for help.
+  hide-from-google: true
+---
+
+<section class="flex justify-center justify-items-center text-center items-center min-h-[82vh] px-8">
+
+    <div class="lg:w-[60%]">
+        <h1 class="text-2xl mb-4 font-serif text-dark">{{ page.heading_html }}</h1>
+        <p>{{ page.description_html }}</p>
+        <a href="{{ page.links.link_1.url }}" class="link mr-2">{{ page.links.link_1.title }}</a>
+        <a href="{{ page.links.link_2.url }}" class="link ml-2">{{ page.links.link_2.title }}</a>
+    </div>
+</section>
