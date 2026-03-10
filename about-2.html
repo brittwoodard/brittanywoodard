@@ -8,6 +8,7 @@ hero-banner:
     image_focus: 
   timeline:
     - |
+      <h1 class="heading">My <em>Origin</em> Story</h1>
       <p>My journey didn't start behind a screen. It started with a degree in Cultural Anthropology and a deep-seated restlessness. While my peers were content in the lecture hall, I felt like I was depreciating, learning about the world instead of experiencing it.</p>
     - |
       <p>In 2013, my obsession with travel and spirituality finally collided. I began learning and teaching yoga across Southeast Asia, Australia, and Europe. During those years, I discovered something about myself. While I loved the practice, I was captivated by the process. I found more joy in building the sales page for a retreat than I did teaching it. I was a "wellness visionary" who secretly had the heart of a developer.</p>
@@ -30,31 +31,31 @@ hero-banner:
 
     <!-- Right Column / Scroll Text -->
   <div class="h-screen overflow-y-auto pr-8 lg:pr-20 pl-8 lg:pl-0 scroll-smooth">
-  <div class="min-h-screen flex flex-col justify-center">
-     <h1 class="heading-md text-feature mb-8">{{ page.hero-banner.heading }}</h1>
-     <p class="text-stone-400 uppercase tracking-widest text-sm italic">Scroll to explore</p>
-  </div>
+
+  <div class="h-[25vh] md:h-[25vh]"></div>
 
   {% for block in page.hero-banner.timeline %}
-  <div class="min-h-screen grid grid-cols-12 items-center relative">
+  <div class="h-[50vh] grid grid-cols-12 items-center relative">
     
     <div class="col-span-1 h-full flex flex-col items-center">
-      <div class="border-r border-feature w-0 h-full opacity-30 {% if forloop.first %}invisible{% endif %}"></div>
+      <div class="border-r border-feature w-0 h-full {% if forloop.first %}invisible{% endif %}"></div>
       
-      <img src="/uploads/timeline-circle-feature.svg" class="h-8 w-8 min-h-[32px] z-10 my-4">
+      <img src="/uploads/timeline-circle-feature.svg" class="h-6 w-6 min-h-[24px]">
 
-      <div class="border-r border-feature w-0 h-full opacity-30 {% if forloop.last %}invisible{% endif %}"></div>
+      <div class="border-r border-feature w-0 h-full {% if forloop.last %}invisible{% endif %}"></div>
     </div>
 
-    <div class="col-span-11 pl-8 lg:pl-12">
-      <div class="prose prose-stone leading-relaxed">
+    <div class="col-span-11 pl-8 lg:pl-12 py-8">
+      <div class="prose prose-stone leading-relaxed max-w-none">
         {{ block | markdownify }}
       </div>
     </div>
 
   </div>
   {% endfor %}
-</div>
+
+  <div class="h-[25vh]"></div>
+
 </div>
   
 </section>
