@@ -1,0 +1,39 @@
+---
+layout: default
+lang: fr
+title: Contacter Brittany Woodard
+description: Parlez-moi de vos besoins. Remplissez le formulaire ci-dessous pour que je puisse en savoir plus sur votre entreprise et ce que vous recherchez.
+hero:
+  image_path: /uploads/brittanywoodard-9.jpg
+  image_focus: left
+  subtitle: 
+  title_html: Contacter <em>Brittany Woodard</em>
+  description: Remplissez le formulaire ci-dessous pour me contacter et découvrir comment je peux vous aider à créer un site web qui travaille pour votre entreprise de bien-être.
+seo:
+  title: Contacter Brittany Woodard
+  description: Contactez Brittany Woodard pour découvrir comment elle peut vous aider à créer un site web qui travaille pour votre entreprise de bien-être.
+  social_image: /uploads/brittanywoodard-9.jpg
+  keywords:
+    - contact
+    - prendre contact
+    - systèmes de site web
+    - automatisation de site web
+    - entreprise de bien-être
+  hide-from-google: false
+---
+
+<section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+
+  <!-- Left Column -->
+  <div class="bg-image-style" style="background-image: url('{{ page.hero.image_path }}'); background-position: {{ page.hero.image_focus }};"></div>
+
+  <!-- Right Column -->
+  <div class="p-8 lg:p-20 h-[100vh] flex items-center">
+    <div>
+      <h1 class="md:pt-24 mb-4">{{ page.hero.title_html }}</h1>
+      <p>{{ page.hero.description }}</p>
+      {% include form-contact.html %}
+    </div>
+  </div>
+
+</section>
