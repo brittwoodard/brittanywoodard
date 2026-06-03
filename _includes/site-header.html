@@ -11,6 +11,12 @@
         {% for item in site.data.navigation.header %}
         <a href="{{ item.url }}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{{ item.title }}</a>
         {% endfor %}
+        <!-- Language switcher -->
+        {% if page.lang == 'fr' %}
+        <a href="{{ page.url | remove: '/fr' }}" class="px-2 mx-2">EN</a>
+        {% else %}
+        <a href="/fr{{ page.url }}" class="px-2 mx-2">FR</a>
+        {% endif %}
     </nav>
 
     <!-- Desktop -->
@@ -22,10 +28,16 @@
         </div>
         <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer leading-[1em]"
             href="/index.html">Brittany Woodard</a>
-        <div class="col-span-3 flex justify-around">
+        <div class="col-span-3 flex justify-around items-center">
             {% for item in site.data.navigation.header limit:3 offset:3 %}
             <a href="{{ item.url }}" class="uppercase">{{item.title}}</a>
             {% endfor %}
+            <!-- Language switcher -->
+            {% if page.lang == 'fr' %}
+            <a href="{{ page.url | remove: '/fr' }}" class="uppercase">English</a>
+            {% else %}
+            <a href="/fr{{ page.url }}" class="uppercase">Français</a>
+            {% endif %}
         </div>
     </nav>
 </header>
