@@ -1,22 +1,31 @@
 header:
   - title: Home
+    title_fr: Accueil
     url: /index
   # - title: About
   #   url: /about  
   - title: Services
+    title_fr: Services
     url: /index.html#services
   - title: Portfolio
+    title_fr: Portfolio
     url: /website-strategy-build#portfolio
   - title: Contact
+    title_fr: Contact
     url: /contact
   - title: Get Started
+    title_fr: Commencer
     url: /get-started
 footer:
   - title: The Whole Package
+    title_fr: La Solution Complète
     url: /website-systems-setup
   - title: Your Systems Partner
+    title_fr: Partenaire Systèmes
     url: /website-systems-retainer  
   - title: Website Strategy + Build
+    title_fr: Stratégie & Création de Site Web
     url: /website-strategy-build
   - title: Portfolio
+    title_fr: Portfolio
     url: /website-strategy-build#portfolio

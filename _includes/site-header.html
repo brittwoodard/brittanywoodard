@@ -9,13 +9,13 @@
 
     <nav class="mobile-menu z-30">
         {% for item in site.data.navigation.header %}
-        <a href="{{ item.url }}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{{ item.title }}</a>
+        <a href="{{ item.url }}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
         {% endfor %}
         <!-- Language switcher -->
         {% if page.lang == 'fr' %}
-        <a href="{{ page.url | remove: '/fr' }}" class="px-2 mx-2">EN</a>
+        <a href="{{ page.url | remove: '/fr' }}" class="px-2 mx-2">English</a>
         {% else %}
-        <a href="/fr{{ page.url }}" class="px-2 mx-2">FR</a>
+        <a href="/fr{{ page.url }}" class="px-2 mx-2">Français</a>
         {% endif %}
     </nav>
 
@@ -23,14 +23,14 @@
     <nav class="hidden md:grid grid-cols-7 items-center">
         <div class="col-span-3 flex justify-around">
             {% for item in site.data.navigation.header limit:3 %}
-            <a href="{{ item.url }}" class="uppercase">{{item.title}}</a>
+            <a href="{{ item.url }}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
             {% endfor %}
         </div>
         <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer leading-[1em]"
             href="/index.html">Brittany Woodard</a>
         <div class="col-span-3 flex justify-around items-center">
             {% for item in site.data.navigation.header limit:3 offset:3 %}
-            <a href="{{ item.url }}" class="uppercase">{{item.title}}</a>
+            <a href="{{ item.url }}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
             {% endfor %}
             <!-- Language switcher -->
             {% if page.lang == 'fr' %}
