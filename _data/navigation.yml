@@ -2,20 +2,23 @@ header:
   - title: Home
     title_fr: Accueil
     url: /index
-  # - title: About
-  #   url: /about  
+    url_fr: /fr/index
   - title: Services
     title_fr: Services
     url: /index.html#services
+    url_fr: /fr/index.html#services
   - title: Portfolio
     title_fr: Portfolio
     url: /website-strategy-build#portfolio
+    url_fr: /fr/website-strategy-build#portfolio
   - title: Contact
     title_fr: Contact
     url: /contact
+    url_fr: /fr/contact
   - title: Get Started
     title_fr: Commencer
     url: /get-started
+    url_fr: /fr/get-started
 footer:
   - title: The Whole Package
     title_fr: La Solution Complète

@@ -9,7 +9,7 @@
 
     <nav class="mobile-menu z-30">
         {% for item in site.data.navigation.header %}
-        <a href="{{ item.url }}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
+        <a href="{% if page.lang == 'fr' %}{{ item.url_fr }}{% else %}{{ item.url }}{% endif %}" class="px-2 mx-2 {% if forloop.last %}text-feature{% endif %}">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
         {% endfor %}
         <!-- Language switcher -->
         {% if page.lang == 'fr' %}
@@ -23,14 +23,14 @@
     <nav class="hidden md:grid grid-cols-7 items-center">
         <div class="col-span-3 flex justify-around">
             {% for item in site.data.navigation.header limit:3 %}
-            <a href="{{ item.url }}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
+            <a href="{% if page.lang == 'fr' %}{{ item.url_fr }}{% else %}{{ item.url }}{% endif %}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
             {% endfor %}
         </div>
         <a class="font-posture lowercase text-[1.75rem] tracking-wide cursor-pointer leading-[1em]"
-            href="/index.html">Brittany Woodard</a>
+            href="{% if page.lang == 'fr' %}/fr/index{% else %}/index.html{% endif %}">Brittany Woodard</a>
         <div class="col-span-3 flex justify-around items-center">
             {% for item in site.data.navigation.header limit:3 offset:3 %}
-            <a href="{{ item.url }}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
+            <a href="{% if page.lang == 'fr' %}{{ item.url_fr }}{% else %}{{ item.url }}{% endif %}" class="uppercase">{% if page.lang == 'fr' %}{{ item.title_fr }}{% else %}{{ item.title }}{% endif %}</a>
             {% endfor %}
             <!-- Language switcher -->
             {% if page.lang == 'fr' %}
