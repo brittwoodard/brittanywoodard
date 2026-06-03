@@ -6,7 +6,7 @@ collections:
 livereload: true
 
 # Site settings
-title: FAF9F6
+title: Brittany Woodard
 description: 
 url: "https://www.brittanywoodard.com"  
 baseurl: ""  # leave empty if site is served at domain root
@@ -14,12 +14,12 @@ lang: en
 timezone: America/New_York
 
 author:
-  name: FAF9F6
+  name: Brittany Woodard
   url: "https://www.brittanywoodard.com"
 
-logo: "/uploads/gentle-within-17.png"
+logo: "/uploads/brittany-woodard-card.png"
 social:
-  name: FAF9F6
+  name: Brittany Woodard
   links:
     - https://www.instagram.com/{{ site.site-settings.social.instagram_username }}
     - https://www.linkedin.com/{{ site.site-settings.social.linkedin_username }}
