@@ -1,0 +1,29 @@
+---
+layout: default
+lang: fr
+title: À propos de Brittany Woodard
+description: Cette page arrive bientôt ! En attendant, si vous avez des questions sur le fait de travailler avec moi, n'hésitez pas à me contacter.
+heading_html: Rencontrez Brittany Woodard, <em>Bientôt disponible</em>
+description_html: Merci pour votre patience ! Je mets la dernière main à cette page pour partager un peu de moi et de mon parcours pour devenir stratégiste en systèmes business. En attendant, si vous avez des questions sur le fait de travailler avec moi, n'hésitez pas à me contacter.
+links: 
+  link_1: 
+    title: Accueil
+    url: /fr/index.html
+  link_2: 
+    title: Contact
+    url: /fr/contact.html
+seo:
+  title: 404 - Page introuvable
+  description: La page que vous recherchez n'existe pas. Retournez à l'accueil ou contactez Brittany Woodard pour obtenir de l'aide.
+  hide-from-google: true
+---
+
+<section class="flex justify-center justify-items-center text-center items-center min-h-[82vh] px-8">
+
+    <div class="lg:w-[60%]">
+        <h1 class="text-2xl mb-4 font-serif text-dark">{{ page.heading_html }}</h1>
+        <p>{{ page.description_html }}</p>
+        <a href="{{ page.links.link_1.url }}" class="link mr-2">{{ page.links.link_1.title }}</a>
+        <a href="{{ page.links.link_2.url }}" class="link ml-2">{{ page.links.link_2.title }}</a>
+    </div>
+</section>
