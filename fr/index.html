@@ -1,0 +1,143 @@
+---
+layout: default
+lang: fr
+title: Systèmes Business & Automatisation pour les Leaders du Bien-Être
+description: Aider les leaders du bien-être à récupérer leur temps en construisant des parcours clients automatisés, des intégrations CRM et des systèmes qui évoluent.
+hero:
+  image_path: /uploads/brittanywoodard-1.jpg
+  image_focus: bottom left
+  subtitle: Vous êtes la visionnaire. Je donne vie à la vision.
+  title_html: Systèmes <em>business</em> et <em>automatisation</em> pour les leaders du bien-être qui ont dépassé les systèmes manuels.
+  description: Les prospects sont capturés, le suivi se fait automatiquement, et la croissance ne s'accompagne pas de plus d'administration.
+  cta:
+    text: Commencer
+services:
+ - delay: 0
+   title: La Solution Complète
+   description: Stratégie, mise en place et automatisation complètes—faites pour vous, ou livrées avec une formation hands-on pour votre équipe. Construites autour de votre entreprise, vos outils et vos objectifs de croissance.
+   cta:
+     url: /website-systems-setup.html
+     text: En Savoir Plus
+ - delay: 300
+   title: Partenaire Systèmes
+   description: Vous n'avez pas besoin d'une refonte complète. Vous avez besoin d'un partenaire technologique qui peut maintenir, optimiser et faire évoluer vos systèmes au fur et à mesure que votre entreprise grandit.
+   cta:
+     url: /website-systems-retainer.html
+     text: Travaillons ensemble
+ - delay: 600
+   title: Stratégie & Création de Site Web
+   description: Un site propre et personnalisé, conçu pour évoluer avec votre entreprise. Construit avec une stratégie pour refléter votre marque, se connecter à vos systèmes et offrir une expérience fluide à vos clients.
+   cta:
+     url: /website-strategy-build.html
+     text: Explorer le portfolio
+cta:
+  heading_html: Êtes-vous prête pour un site web qui <em>travaille pour vous ?</em>
+  description: Construisons des systèmes qui évoluent, pour que vous puissiez vous concentrer sur ce que vous aimez.
+  button:
+    text: Commencer
+description: "Systèmes business et automatisation de haut niveau pour les leaders du bien-être. Transformez votre site web en une expérience client évolutive avec une intégration CRM personnalisée et une automatisation."
+seo:
+  title: Systèmes Business & Automatisation pour les Leaders du Bien-Être | Brittany Woodard
+  description: Arrêtez de gérer des systèmes défaillants. Brittany Woodard crée des processus d'intégration automatisés, des intégrations CRM et des sites web évolutifs pour les marques du bien-être.
+  hide-from-google: false
+---
+
+<!-- Hero Banner -->
+{% include section-hero-img-left.html %}
+
+
+<!-- Problem -->
+<section class="bg-dark text-x-light font-normal px-8 lg:px-20 py-20">
+  <div class="md:w-[80%] lg:w-[60%]" data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+    <h2 class="heading mb-4">Vous n'avez pas créé votre entreprise pour <em>passer votre temps à gérer des systèmes défaillants.</em></h2>
+    <p>Mais quand l'intégration est maladroite, les emails partent en retard et les clients arrivent confus, vous vous retrouvez à corriger manuellement ce que votre site web devrait déjà gérer.</p>
+  </div>
+</section>
+
+
+<!-- Services -->
+<section id="services" class="bg-main text-x-light font-normal py-20 px-8 md:px-20 text-center">
+
+  <div data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+    <h2 class="heading lg:mb-12">Voici comment je peux transformer votre <em>vision</em> en une <em>expérience client évolutive</em>.</h2>
+  </div>
+
+  <div class="lg:grid lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-x-light">
+
+    {% for item in page.services %}
+    <div class="py-20 lg:py-8 md:px-16" data-aos="fade" data-aos-offset="100" data-aos-delay="{{ item.delay }}" data-aos-duration="3000">
+      <h3 class="subtitle mb-4">{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <a href="{{ item.cta.url }}" class="button-light">{{ item.cta.text }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<!-- Benefits -->
+<section>
+  <div class="grid md:grid-cols-2 my-20" data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+
+    <!-- Left Column -->
+    <div class="bg-image-style min-h-[60vh] mx-8 md:mx-0" style="background-image: url('/uploads/brittanywoodard-2.jpg'); background-position: 50% 65%;"></div>
+
+    <!-- Right Column -->
+    <div class="mt-20 md:mt-0 mx-8 lg:mx-20 border-y border-x-dark py-8 flex items-center">
+      <div class="mb-4 md:mb-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+        <h2 class="heading mb-4">Une entreprise qui <em>fonctionne sans surveillance constante</em></h2>
+      <ul class="list-none">
+        <li>Votre entreprise tourne sans accroc, même quand vous prenez une journée de repos. Fini le baby-sitting.</li>
+        <li>Chaque euro investi en marketing travaille plus dur parce que vos tunnels de vente assurent le suivi et vos offres convertissent.</li>
+        <li>Vous pouvez promouvoir, lancer et grandir sans rester collée à votre ordinateur.</li>
+        <li>L'intégration est simple. Les clients savent ce qui vient ensuite, et l'accès est immédiat.</li>
+        <li>Votre agenda est rempli du travail que vous aimez, pas de marathons administratifs enchaînés.</li>
+        <li>Votre équipe fait le point une fois par semaine, pas toutes les heures, parce que vos systèmes gèrent le reste.</li>
+        <li>Votre entreprise reflète votre niveau d'expérience, pas l'état de vos systèmes.</li>
+      </ul>
+      <a href="{{ site.data.site-settings.cta.url }}" class="button mt-8">Commencer</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Testimonials -->
+ <div class="bg-dark text-x-light py-20 px-8 md:px-20">
+  <div class="md:w-[60%] mx-auto" data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
+    <div class="text-center heading italic">
+      <p>Je ne saurais pas assez recommander Brittany. Je me suis sentie accompagnée dès le moment où nous avons décidé de travailler ensemble. Elle a écouté où en est mon entreprise aujourd'hui et où je veux qu'elle aille, et a réussi à construire un système qui a véritablement transformé mon site web, ce qui était essentiellement une carte de visite en ligne, en un beau site qui agit comme un assistant virtuel. Je pensais avoir besoin de recruter un nouveau membre dans mon équipe, mais en réalité, j'avais juste besoin de mettre mon site web et mon CRM en ordre. Et c'est exactement ce que Brittany a fait.</p>
+    </div>
+    <!-- <p class="subtitle text-right mt-4">-- Name</p> -->
+  </div>
+ </div>
+</section>
+
+
+<!-- About -->
+<section class="grid md:grid-cols-3 my-20">
+
+  <!-- Left Column -->
+  <div class="heading px-8 lg:px-20 mb-8 md:mb-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+    <h2><em>Je crée des systèmes</em> pour les leaders du bien-être qui <em>ont besoin de plus qu'un beau site web</em>.</h2>
+  </div>
+
+  <!-- Middle Column -->
+  <div class="px-8 lg:px-20 border-x border-x-dark" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+    <div class="bg-image-style min-h-[80vh]" style="background-image: url('/uploads/brittanywoodard-13.png');"></div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="px-8 lg:px-20 text-right flex items-end mt-8 md:mt-0" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+    <div>
+      <div>
+        <p>Je suis Brittany et je travaille avec des marques du bien-être qui ont dépassé les configurations désordonnées et les sites qui soit ont une belle apparence mais ne font pas grand-chose, soit font le travail mais semblent en décalage avec la marque.</p>
+        <p>Je crée et gère des sites web premium entièrement intégrés à votre CRM, votre inscription, votre intégration et l'expérience de vos clients. Pour que votre site soutienne la façon dont votre entreprise fonctionne réellement.</p>
+      </div>
+      <a href="/about.html" class="button mt-8">Rencontrer Brittany</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+{% include section-cta.html %}
