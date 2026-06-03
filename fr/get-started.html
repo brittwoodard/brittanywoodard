@@ -1,0 +1,42 @@
+---
+layout: default
+lang: fr
+title: Travailler avec Brittany | Demande de Systèmes & Stratégie
+description: Remplissez le formulaire de demande pour entamer la conversation sur votre site web, vos systèmes ou votre support forfaitaire.
+hero:
+  image_path: /uploads/brittanywoodard-3.jpg
+  image_focus: bottom
+  subtitle: 
+  title_html: Parlez-moi un peu de <em>votre entreprise</em>
+  description: Remplissez le formulaire ci-dessous pour que je puisse en savoir plus sur ce que vous recherchez. Si nous sommes une bonne correspondance, je vous enverrai un lien pour planifier un appel découverte.
+seo:
+  title: Renseignements sur la Stratégie Systèmes & Design de Site Web avec Brittany Woodard
+  description: Faites le premier pas vers une entreprise de bien-être évolutive. Remplissez le questionnaire pour discuter de créations de sites web personnalisés, d'automatisation CRM ou de support systèmes continu.
+  social_image: /uploads/brittanywoodard-9.jpg
+  keywords:
+    - engager une stratégiste systèmes bien-être
+    - demande d'automatisation pour entreprise de bien-être
+    - contacter Brittany Woodard
+    - appel découverte stratégie de site web
+  hide-from-google: false
+---
+
+<section class="md:grid md:grid-cols-2 relative" data-aos="fade" data-aos-delay="100" data-aos-duration="3000">
+
+  <div class="hidden md:block relative w-full h-full">
+    <div class="sticky top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-image-style" 
+         style="background-image: url('{{ page.hero.image_path }}'); 
+                background-position: {{ page.hero.image_focus }}; 
+                min-height: 100vh;">
+    </div>
+  </div>
+
+  <div class="p-8 lg:p-20 flex items-center min-h-screen">
+    <div class="w-full">
+      <h1 class="md:pt-40 lg:pt-24 mb-4">{{ page.hero.title_html }}</h1>
+      <p class="mb-6">{{ page.hero.description }}</p>
+      {% include form-inquire-fr.html %}
+    </div>
+  </div>
+
+</section>
