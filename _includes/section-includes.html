@@ -11,6 +11,10 @@
         <div>
             {{ page.includes.description_html }}
         </div>
+        {% if page.lang == "fr" %}
+        <a href="{{ site.data.site-settings.cta.url_french }}" class="button mt-8">{{ page.cta.button.text }}</a>
+        {% else %}
         <a href="{{ site.data.site-settings.cta.url }}" class="button mt-8">{{ page.cta.button.text }}</a>
+        {% endif %}
     </div>
 </section>

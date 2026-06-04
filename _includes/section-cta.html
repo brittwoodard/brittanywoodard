@@ -2,6 +2,10 @@
   <div data-aos="fade" data-aos-offset="100" data-aos-duration="3000">
     <h2 class="heading mb-4">{{ page.cta.heading_html }}</h2>
     <p class="font-normal">{{ page.cta.description }}</p>
-    <a href="{{ site.data.site-settings.cta.url }}" class="button-light mt-4">{{ page.cta.button.text }}</a>
+    {% if page.lang == "fr" %}
+      <a href="{{ site.data.site-settings.cta.url_french }}" class="button-light mt-4">{{ page.cta.button.text }}</a>
+    {% else %}
+      <a href="{{ site.data.site-settings.cta.url }}" class="button-light mt-4">{{ page.cta.button.text }}</a>
+    {% endif %}
   </div>
 </section>

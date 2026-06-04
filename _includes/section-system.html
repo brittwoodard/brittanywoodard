@@ -10,8 +10,12 @@
             <p class="subtitle mb-2">{{ item.title }}</p>
             <p class="pb-2">{{ item.description }}</p>
         </div>
-    {% endfor %}
+        {% endfor %}
 
-    {% include button-cta.html %}
+        {% if page.lang == "fr" %}
+        {% include button-cta-fr.html %}
+        {% else %}
+        {% include button-cta.html %}
+        {% endif %}
     </div>
 </section>
