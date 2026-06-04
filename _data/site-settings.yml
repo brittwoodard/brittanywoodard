@@ -28,3 +28,6 @@ technical:
   instagram_widget_embed:
 cta:
   url: /get-started
+  url_french: /fr/get-started
+  text: Get Started
+  text_french: Commencer
